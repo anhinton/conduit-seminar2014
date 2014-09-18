@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<module xmlns="http://www.openapi.org/2014/" version="0.1">
+  <platform name="R"/>
+  <input name="nonvoters" type="internal"/>
+  <input name="pop2013grouped" type="internal"/>
+  <output name="nvplot" type="external" ref="non-voters.svg"/>
+  <output name="poplot" type="external" ref="population.svg"/>
+  <source ref="src/plot.R"><![CDATA[]]></source>
+</module>

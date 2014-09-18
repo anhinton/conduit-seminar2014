@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<module xmlns="http://www.openapi.org/2014/" version="0.1">
+  <platform name="R"/>
+  <input name="nonvoters" type="internal"/>
+  <input name="pop2013" type="internal"/>
+  <output name="youngNonvotersPercent" type="internal"/>
+  <source ref="src/calculate.R"><![CDATA[]]></source>
+</module>
