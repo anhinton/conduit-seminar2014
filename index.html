@@ -1,7 +1,7 @@
 <!doctype html>
 
 <html lang="en">
-<head>
+  <head>
 <style type="text/css">
 .knitr.inline {
   background-color: #f7f7f7;
@@ -64,26 +64,39 @@
   font-weight: bold;
 }
 </style>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
 
-  <title>OpenAPI Seminar 2014 conduit example</title>
-  <meta name="description" content="Pipeline and module scripts from Paul
-				    Murrell's 2014 OpenAPI seminar adapted
-				    to run in conduit">
-  <meta name="author" content="SitePoint">
+    <title>OpenAPI Seminar 2014 conduit example</title>
+    <meta name="description" content="Pipeline and module scripts from Paul
+				      Murrell's 2014 OpenAPI seminar adapted
+				      to run in conduit">
+    <meta name="author" content="SitePoint">
 
-  <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
-</head>
+    <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
+  </head>
 
-<body>
+  <body>
 
-<p>
-<div class="chunk" id="unnamed-chunk-1"><div class="rcode"><div class="source"><pre class="knitr r">    <span class="hl num">2</span><span class="hl opt">+</span><span class="hl num">2</span>
+    <p>
+      As conduit is still under active development, I have provided a tarball of
+      <a href="conduit_0.1-0-2014-09-19.tar.gz">the package</a> as it was when 
+      this page was created.
+    </p>  
+
+
+
+<div class="chunk" id="unnamed-chunk-3"><div class="rcode"><div class="source"><pre class="knitr r">        <span class="hl std">tidyPipe</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">loadPipeline</span><span class="hl std">(</span><span class="hl str">&quot;XML/tidyPipe.xml&quot;</span><span class="hl std">)</span>
+        <span class="hl kwd">runPipeline</span><span class="hl std">(tidyPipe)</span>
+        <span class="hl kwd">list.files</span><span class="hl std">(</span><span class="hl str">&quot;pipelines&quot;</span><span class="hl std">,</span> <span class="hl kwc">recursive</span><span class="hl std">=</span><span class="hl num">TRUE</span><span class="hl std">)</span>
 </pre></div>
-<div class="output"><pre class="knitr r">## [1] 4
+<div class="output"><pre class="knitr r">## [1] "tidyPipe/modules/tidy/nonvoters.rds"     
+## [2] "tidyPipe/modules/tidy/pop2013grouped.rds"
+## [3] "tidyPipe/modules/tidy/pop2013.rds"       
+## [4] "tidyPipe/modules/tidy/script.R"
 </pre></div>
 </div></div>
-</p>
 
-</body>
+
+
+  </body>
 </html>

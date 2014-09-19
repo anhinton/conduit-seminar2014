@@ -1,25 +1,39 @@
 <!doctype html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
 
-  <title>OpenAPI Seminar 2014 conduit example</title>
-  <meta name="description" content="Pipeline and module scripts from Paul
-				    Murrell's 2014 OpenAPI seminar adapted
-				    to run in conduit">
-  <meta name="author" content="SitePoint">
+    <title>OpenAPI Seminar 2014 conduit example</title>
+    <meta name="description" content="Pipeline and module scripts from Paul
+				      Murrell's 2014 OpenAPI seminar adapted
+				      to run in conduit">
+    <meta name="author" content="SitePoint">
 
-  <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
-</head>
+    <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
+  </head>
 
-<body>
+  <body>
 
-<p>
-  <!--begin.rcode
-      2+2
-      end.rcode-->
-</p>
+    <p>
+      As conduit is still under active development, I have provided a tarball of
+      <a href="conduit_0.1-0-2014-09-19.tar.gz">the package</a> as it was when 
+      this page was created.
+    </p>  
 
-</body>
+    <!--begin.rcode include=FALSE, warning=FALSE, message=FALSE
+	install.packages("conduit_0.1-0-2014-09-19.tar.gz")
+	end.rcode-->
+    <!--begin.rcode include=FALSE, warning=FALSE, message=FALSE
+	library(conduit)
+	end.rcode-->
+    <!--begin.rcode
+	tidyPipe <- loadPipeline("XML/tidyPipe.xml")
+	runPipeline(tidyPipe)
+	list.files("pipelines", recursive=TRUE)
+	end.rcode-->
+
+
+
+  </body>
 </html>
