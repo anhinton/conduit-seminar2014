@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<module xmlns="http://www.openapi.org/2014/" version="0.1">
-  <platform name="R"/>
-  <input name="nonvoters" type="internal"/>
-  <input name="pop2013" type="internal"/>
-  <output name="pie" type="external" ref="pie.svg"/>
-  <source ref="src/calculate.R"><![CDATA[]]></source>
-  <source ref="src/pie.R"><![CDATA[]]></source>
-</module>

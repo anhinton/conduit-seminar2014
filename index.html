@@ -83,18 +83,186 @@
       this page was created.
     </p>  
 
-
-
-<div class="chunk" id="unnamed-chunk-3"><div class="rcode"><div class="source"><pre class="knitr r">        <span class="hl std">tidyPipe</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">loadPipeline</span><span class="hl std">(</span><span class="hl str">&quot;XML/tidyPipe.xml&quot;</span><span class="hl std">)</span>
-        <span class="hl kwd">runPipeline</span><span class="hl std">(tidyPipe)</span>
-        <span class="hl kwd">list.files</span><span class="hl std">(</span><span class="hl str">&quot;pipelines&quot;</span><span class="hl std">,</span> <span class="hl kwc">recursive</span><span class="hl std">=</span><span class="hl num">TRUE</span><span class="hl std">)</span>
+<div class="chunk" id="unnamed-chunk-1"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl kwd">install.packages</span><span class="hl std">(</span><span class="hl str">&quot;conduit_0.1-0-2014-09-19.tar.gz&quot;</span><span class="hl std">)</span>
 </pre></div>
-<div class="output"><pre class="knitr r">## [1] "tidyPipe/modules/tidy/nonvoters.rds"     
-## [2] "tidyPipe/modules/tidy/pop2013grouped.rds"
-## [3] "tidyPipe/modules/tidy/pop2013.rds"       
-## [4] "tidyPipe/modules/tidy/script.R"
+<div class="message"><pre class="knitr r">## Installing package into '/home/ahin017/R/x86_64-pc-linux-gnu-library/3.1'
+## (as 'lib' is unspecified)
+## inferring 'repos = NULL' from 'pkgs'
 </pre></div>
 </div></div>
+ 
+<div class="chunk" id="unnamed-chunk-2"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl kwd">library</span><span class="hl std">(conduit)</span>
+</pre></div>
+</div></div>
+    
+    <p>
+      <a href="https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/openapi.html#14.0">openapi is a Glue System</a>
+    </p>
+
+<div class="chunk" id="unnamed-chunk-3"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl std">birthrate</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">loadPipeline</span><span class="hl std">(</span><span class="hl str">&quot;scripts/wikinz/birthrate-pipe.xml&quot;</span><span class="hl std">,</span>
+                                  <span class="hl str">&quot;birthrate&quot;</span><span class="hl std">)</span>
+<span class="hl kwd">runPipeline</span><span class="hl std">(birthrate)</span>
+<span class="hl kwd">list.files</span><span class="hl std">(</span><span class="hl str">&quot;pipelines/birthrate/modules&quot;</span><span class="hl std">,</span> <span class="hl kwc">recursive</span><span class="hl std">=</span><span class="hl num">TRUE</span><span class="hl std">)</span>
+</pre></div>
+<div class="output"><pre class="knitr r">## [1] "birthrate/birthrate.csv"  "birthrate/script.R"      
+## [3] "brplot-R/birthrate-R.svg" "brplot-R/script.R"
+</pre></div>
+</div></div>
+
+    <p><a href="https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/openapi.html#15.0">openapi is...</a></p>
+
+<div class="chunk" id="unnamed-chunk-4"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl kwd">library</span><span class="hl std">(gridGraphviz)</span>
+<span class="hl kwd">library</span><span class="hl std">(gridSVG)</span>
+<span class="hl kwd">gridsvg</span><span class="hl std">(</span><span class="hl str">&quot;birthrate-pipe.svg&quot;</span><span class="hl std">,</span> <span class="hl kwc">width</span><span class="hl std">=</span><span class="hl num">4</span><span class="hl std">,</span> <span class="hl kwc">height</span><span class="hl std">=</span><span class="hl num">3</span><span class="hl std">)</span>
+<span class="hl kwd">grid.graph</span><span class="hl std">(</span><span class="hl kwd">agopenTrue</span><span class="hl std">(conduit:::</span><span class="hl kwd">graphPipeline</span><span class="hl std">(birthrate),</span> <span class="hl str">&quot;birthrate&quot;</span><span class="hl std">,</span>
+                      <span class="hl kwc">attrs</span><span class="hl std">=</span><span class="hl kwd">list</span><span class="hl std">(</span><span class="hl kwc">node</span><span class="hl std">=</span><span class="hl kwd">list</span><span class="hl std">(</span><span class="hl kwc">shape</span><span class="hl std">=</span><span class="hl str">&quot;ellipse&quot;</span><span class="hl std">))))</span>
+<span class="hl kwd">dev.off</span><span class="hl std">()</span>
+</pre></div>
+</div></div>
+
+    <p class="fig">
+      <img src="birthrate-pipe.svg">
+    </p> 
+
+    <p><a href="https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/openapi.html#21.0">Another openapi example</a></p>
+
+<div class="chunk" id="unnamed-chunk-5"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl std">birthrate_custom</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">loadPipeline</span><span class="hl std">(</span><span class="hl str">&quot;scripts/wikinz/birthrate-pipe-custom.xml&quot;</span><span class="hl std">,</span>
+                                 <span class="hl str">&quot;birthrate_custom&quot;</span><span class="hl std">)</span>
+<span class="hl kwd">runPipeline</span><span class="hl std">(birthrate_custom)</span>
+<span class="hl kwd">list.files</span><span class="hl std">(</span><span class="hl str">&quot;pipelines/birthrate_custom&quot;</span><span class="hl std">)</span>
+</pre></div>
+<div class="output"><pre class="knitr r">## [1] "modules"
+</pre></div>
+<div class="source"><pre class="knitr r"><span class="hl kwd">gridsvg</span><span class="hl std">(</span><span class="hl str">&quot;birthrate-custom-pipe.svg&quot;</span><span class="hl std">,</span> <span class="hl kwc">width</span><span class="hl std">=</span><span class="hl num">4</span><span class="hl std">,</span> <span class="hl kwc">height</span><span class="hl std">=</span><span class="hl num">3</span><span class="hl std">)</span>
+<span class="hl kwd">grid.graph</span><span class="hl std">(</span><span class="hl kwd">agopenTrue</span><span class="hl std">(conduit:::</span><span class="hl kwd">graphPipeline</span><span class="hl std">(birthrate_custom),</span>
+                      <span class="hl str">&quot;birthrate_custom&quot;</span><span class="hl std">,</span>
+                      <span class="hl kwc">attrs</span><span class="hl std">=</span><span class="hl kwd">list</span><span class="hl std">(</span><span class="hl kwc">node</span><span class="hl std">=</span><span class="hl kwd">list</span><span class="hl std">(</span><span class="hl kwc">shape</span><span class="hl std">=</span><span class="hl str">&quot;ellipse&quot;</span><span class="hl std">))))</span>
+<span class="hl kwd">grid.edit</span><span class="hl std">(</span><span class="hl str">&quot;box-brplot-R-custom&quot;</span><span class="hl std">,</span> <span class="hl kwc">gp</span><span class="hl std">=</span><span class="hl kwd">gpar</span><span class="hl std">(</span><span class="hl kwc">fill</span><span class="hl std">=</span><span class="hl str">&quot;green&quot;</span><span class="hl std">))</span>
+<span class="hl kwd">dev.off</span><span class="hl std">()</span>
+</pre></div>
+</div></div>
+
+    <p class="fig">
+      <img src="birthrate-custom-pipe.svg">
+    </p> 
+
+    <p class="fig">
+      <img src="pipelines/birthrate_custom/modules/brplot-R-custom/birthrate-R.svg">
+    </p>
+
+    <p><a href="https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/openapi.html#20.0">An openapi example</a></p>
+
+<div class="chunk" id="unnamed-chunk-6"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl std">birthrate_python</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">loadPipeline</span><span class="hl std">(</span><span class="hl str">&quot;scripts/wikinz/birthrate-pipe-python.xml&quot;</span><span class="hl std">,</span>
+                                 <span class="hl str">&quot;birthrate_python&quot;</span><span class="hl std">)</span>
+<span class="hl kwd">runPipeline</span><span class="hl std">(birthrate_python)</span>
+<span class="hl kwd">list.files</span><span class="hl std">(</span><span class="hl str">&quot;pipelines/birthrate_python&quot;</span><span class="hl std">)</span>
+</pre></div>
+<div class="output"><pre class="knitr r">## [1] "modules"
+</pre></div>
+<div class="source"><pre class="knitr r"><span class="hl kwd">library</span><span class="hl std">(gridSVG)</span>
+<span class="hl kwd">gridsvg</span><span class="hl std">(</span><span class="hl str">&quot;birthrate-pipe-python.svg&quot;</span><span class="hl std">,</span> <span class="hl kwc">width</span><span class="hl std">=</span><span class="hl num">4</span><span class="hl std">,</span> <span class="hl kwc">height</span><span class="hl std">=</span><span class="hl num">3</span><span class="hl std">)</span>
+<span class="hl kwd">grid.graph</span><span class="hl std">(</span><span class="hl kwd">agopenTrue</span><span class="hl std">(conduit:::</span><span class="hl kwd">graphPipeline</span><span class="hl std">(birthrate_python),</span>
+                      <span class="hl str">&quot;birthrate_python&quot;</span><span class="hl std">,</span>
+                      <span class="hl kwc">attrs</span><span class="hl std">=</span><span class="hl kwd">list</span><span class="hl std">(</span><span class="hl kwc">node</span><span class="hl std">=</span><span class="hl kwd">list</span><span class="hl std">(</span><span class="hl kwc">shape</span><span class="hl std">=</span><span class="hl str">&quot;ellipse&quot;</span><span class="hl std">))))</span>
+<span class="hl kwd">grid.edit</span><span class="hl std">(</span><span class="hl str">&quot;box-brplot-py&quot;</span><span class="hl std">,</span> <span class="hl kwc">gp</span><span class="hl std">=</span><span class="hl kwd">gpar</span><span class="hl std">(</span><span class="hl kwc">fill</span><span class="hl std">=</span><span class="hl str">&quot;green&quot;</span><span class="hl std">))</span>
+<span class="hl kwd">dev.off</span><span class="hl std">()</span>
+</pre></div>
+</div></div>
+
+    <p class="fig">
+      <img src="birthrate-pipe-python.svg">
+    </p>
+
+    <p class="fig">
+      <img src="pipelines/birthrate_python/modules/brplot-py/birthrate-py.svg">
+    </p>
+
+    <p><a href="https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/openapi.html#33.0">Yet another openapi example</a></p>
+
+<div class="chunk" id="unnamed-chunk-7"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl std">plotPipe</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">loadPipeline</span><span class="hl std">(</span><span class="hl str">&quot;scripts/internetparty/plotPipe.xml&quot;</span><span class="hl std">,</span> <span class="hl str">&quot;plotPipe&quot;</span><span class="hl std">)</span>
+<span class="hl kwd">library</span><span class="hl std">(gridSVG)</span>
+<span class="hl kwd">gridsvg</span><span class="hl std">(</span><span class="hl str">&quot;plotPipe.svg&quot;</span><span class="hl std">,</span> <span class="hl kwc">width</span><span class="hl std">=</span><span class="hl num">4</span><span class="hl std">,</span> <span class="hl kwc">height</span><span class="hl std">=</span><span class="hl num">4</span><span class="hl std">)</span>
+<span class="hl kwd">grid.graph</span><span class="hl std">(</span><span class="hl kwd">agopenTrue</span><span class="hl std">(conduit:::</span><span class="hl kwd">graphPipeline</span><span class="hl std">(plotPipe),</span>
+                      <span class="hl str">&quot;plotPipe&quot;</span><span class="hl std">,</span>
+                      <span class="hl kwc">attrs</span><span class="hl std">=</span><span class="hl kwd">list</span><span class="hl std">(</span><span class="hl kwc">node</span><span class="hl std">=</span><span class="hl kwd">list</span><span class="hl std">(</span><span class="hl kwc">shape</span><span class="hl std">=</span><span class="hl str">&quot;ellipse&quot;</span><span class="hl std">))))</span>
+<span class="hl kwd">dev.off</span><span class="hl std">()</span>
+</pre></div>
+<div class="warning"><pre class="knitr r">## Warning: one of more grobs overwritten (grab WILL not be faithful; try
+## 'wrap = TRUE')
+</pre></div>
+</div></div>
+
+    <p style="fig">
+      <img src="plotPipe.svg">
+    </p>
+
+    <p><a href="https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/openapi.html#36.0">Yet another openapi example</a></p>
+
+<div class="chunk" id="unnamed-chunk-8"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl std">piePipe</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">loadPipeline</span><span class="hl std">(</span><span class="hl str">&quot;scripts/internetparty/piePipe.xml&quot;</span><span class="hl std">)</span>
+<span class="hl kwd">runPipeline</span><span class="hl std">(piePipe)</span>
+<span class="hl kwd">list.files</span><span class="hl std">(</span><span class="hl str">&quot;pipelines/piePipe&quot;</span><span class="hl std">)</span>
+</pre></div>
+<div class="output"><pre class="knitr r">## [1] "modules"
+</pre></div>
+<div class="source"><pre class="knitr r"><span class="hl kwd">library</span><span class="hl std">(gridSVG)</span>
+<span class="hl kwd">gridsvg</span><span class="hl std">(</span><span class="hl str">&quot;piePipe.svg&quot;</span><span class="hl std">,</span> <span class="hl kwc">width</span><span class="hl std">=</span><span class="hl num">4</span><span class="hl std">,</span> <span class="hl kwc">height</span><span class="hl std">=</span><span class="hl num">4</span><span class="hl std">)</span>
+<span class="hl kwd">grid.graph</span><span class="hl std">(</span><span class="hl kwd">agopenTrue</span><span class="hl std">(conduit:::</span><span class="hl kwd">graphPipeline</span><span class="hl std">(piePipe),</span>
+                      <span class="hl str">&quot;piePipe&quot;</span><span class="hl std">,</span>
+                      <span class="hl kwc">attrs</span><span class="hl std">=</span><span class="hl kwd">list</span><span class="hl std">(</span><span class="hl kwc">node</span><span class="hl std">=</span><span class="hl kwd">list</span><span class="hl std">(</span><span class="hl kwc">shape</span><span class="hl std">=</span><span class="hl str">&quot;ellipse&quot;</span><span class="hl std">))))</span>
+<span class="hl kwd">grid.edit</span><span class="hl std">(</span><span class="hl str">&quot;box-pie&quot;</span><span class="hl std">,</span> <span class="hl kwc">gp</span><span class="hl std">=</span><span class="hl kwd">gpar</span><span class="hl std">(</span><span class="hl kwc">fill</span><span class="hl std">=</span><span class="hl str">&quot;green&quot;</span><span class="hl std">))</span>
+<span class="hl kwd">dev.off</span><span class="hl std">()</span>
+</pre></div>
+<div class="warning"><pre class="knitr r">## Warning: one of more grobs overwritten (grab WILL not be faithful; try
+## 'wrap = TRUE')
+</pre></div>
+</div></div>
+
+    <p style="fig">
+      <img src="piePipe.svg">
+    </p>
+
+    <p class="fig">
+      <object width="350px" height="350px"
+              data="pipelines/piePipe/modules/pie/pie.svg" 
+              type="image/svg+xml"> </object>
+    </p>
+
+<div class="chunk" id="unnamed-chunk-9"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl std">reportPipe</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">loadPipeline</span><span class="hl std">(</span><span class="hl str">&quot;scripts/internetparty/reportPipe.xml&quot;</span><span class="hl std">,</span> <span class="hl str">&quot;reportPipe&quot;</span><span class="hl std">)</span>
+<span class="hl kwd">runPipeline</span><span class="hl std">(reportPipe)</span>
+<span class="hl kwd">list.files</span><span class="hl std">(</span><span class="hl str">&quot;pipelines/reportPipe&quot;</span><span class="hl std">,</span> <span class="hl kwc">recursive</span><span class="hl std">=</span><span class="hl num">TRUE</span><span class="hl std">)</span>
+</pre></div>
+<div class="output"><pre class="knitr r">##  [1] "modules/calculate/script.R"                 
+##  [2] "modules/calculate/youngNonvotersPercent.rds"
+##  [3] "modules/plot/non-voters.svg"                
+##  [4] "modules/plot/population.svg"                
+##  [5] "modules/plot/script.R"                      
+##  [6] "modules/report/report.html"                 
+##  [7] "modules/report/script.R"                    
+##  [8] "modules/tidy/nonvoters.rds"                 
+##  [9] "modules/tidy/pop2013grouped.rds"            
+## [10] "modules/tidy/pop2013.rds"                   
+## [11] "modules/tidy/script.R"
+</pre></div>
+</div></div>
+
+    <iframe width="500px" height="700px" seamless
+            src="pipelines/reportPipe/modules/report/report.html"></iframe>
+
+<div class="chunk" id="unnamed-chunk-10"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl kwd">library</span><span class="hl std">(gridSVG)</span>
+<span class="hl kwd">gridsvg</span><span class="hl std">(</span><span class="hl str">&quot;reportPipe.svg&quot;</span><span class="hl std">,</span> <span class="hl kwc">width</span><span class="hl std">=</span><span class="hl num">4</span><span class="hl std">,</span> <span class="hl kwc">height</span><span class="hl std">=</span><span class="hl num">4</span><span class="hl std">)</span>
+<span class="hl kwd">grid.graph</span><span class="hl std">(</span><span class="hl kwd">agopenTrue</span><span class="hl std">(conduit:::</span><span class="hl kwd">graphPipeline</span><span class="hl std">(reportPipe),</span>
+                      <span class="hl str">&quot;reportPipe&quot;</span><span class="hl std">,</span>
+                      <span class="hl kwc">attrs</span><span class="hl std">=</span><span class="hl kwd">list</span><span class="hl std">(</span><span class="hl kwc">node</span><span class="hl std">=</span><span class="hl kwd">list</span><span class="hl std">(</span><span class="hl kwc">shape</span><span class="hl std">=</span><span class="hl str">&quot;ellipse&quot;</span><span class="hl std">))))</span>
+<span class="hl kwd">dev.off</span><span class="hl std">()</span>
+</pre></div>
+<div class="warning"><pre class="knitr r">## Warning: one of more grobs overwritten (grab WILL not be faithful; try
+## 'wrap = TRUE')
+</pre></div>
+</div></div>
+
+  <p style="fig">
+    <img src="reportPipe.svg">
+  </p>
 
 
 
