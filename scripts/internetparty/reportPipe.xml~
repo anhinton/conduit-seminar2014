@@ -1,0 +1,36 @@
+<pipeline xmlns="http://www.openapi.org/2014/" version="0.1">
+  <component name="nonvoters"/>
+  <component name="tidy"/>
+  <component name="population"/>
+  <component name="plot"/>
+  <component name="calculate"/>
+  <component name="report"/>
+  <pipe>
+    <start component="nonvoters" name="nvfile"/>
+    <end component="tidy" name="nvfile"/>
+  </pipe>
+  <pipe>
+    <start component="population" name="popfile"/>
+    <end component="tidy" name="popfile"/>
+  </pipe>
+  <pipe>
+    <start component="tidy" name="nonvoters"/>
+    <end component="plot" name="nonvoters"/>
+  </pipe>
+  <pipe>
+    <start component="tidy" name="pop2013grouped"/>
+    <end component="plot" name="pop2013grouped"/>
+  </pipe>
+  <pipe>
+    <start component="tidy" name="nonvoters"/>
+    <end component="calculate" name="nonvoters"/>
+  </pipe>
+  <pipe>
+    <start component="tidy" name="pop2013"/>
+    <end component="calculate" name="pop2013"/>
+  </pipe>
+  <pipe>
+    <start component="calculate" name="youngNonvotersPercent"/>
+    <end component="report" name="youngNonvotersPercent"/>
+  </pipe>
+</pipeline>

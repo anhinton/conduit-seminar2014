@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<module xmlns="http://www.openapi.org/2014/" version="0.1">
+  <platform name="R"/>
+  <description><![CDATA[This module takes a CSV file and produces a clean version, also a CSV file, called 'clean.csv'. It is designed specifically to create a clean version of 'VSB357005_20140611_121828_65.csv' that can be read directly by statistical software. The module also outputs a vector of numbers that identify two columns in the clean CSV file and a vector of names for those two columns.]]></description>
+  <input name="srcfile" type="external"/>
+  <output name="sbfile" type="external" ref="clean.csv"/>
+  <output name="index" type="internal"/>
+  <output name="names" type="internal"/>
+  <source ref="src/clean-file.R"><![CDATA[]]></source>
+  <source><![CDATA[index <- 1:2; names <- c("year", "stillbirths")]]></source>
+</module>

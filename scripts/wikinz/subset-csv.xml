@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<module xmlns="http://www.openapi.org/2014/" version="0.1">
+  <platform name="R"/>
+  <description><![CDATA[This module takes a clean CSV file as input, plus a vector of numbers that identify which columns to keep from the CSV file, plus a vector of names to use for the kept columns.  The result is a subset of the original CSV file, also a CSV, called 'subset.csv'.]]></description>
+  <input name="filename" type="external"/>
+  <input name="index" type="internal"/>
+  <input name="names" type="internal"/>
+  <output name="subset" type="external" ref="subset.csv"/>
+  <source ref="src/subset-csv.R"><![CDATA[]]></source>
+</module>

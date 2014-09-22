@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<module xmlns="http://www.openapi.org/2014/" version="0.1">
+  <platform name="python"/>
+  <description><![CDATA[This module reads a CSV file and produces a scatterplot in an SVG file called 'birthrate-py.svg'.  It assumes that the CSV file contains two columns of data: year in the first column (plotted on the x-axis) and birthrate in the second column (plotted on the y-axis).]]></description>
+  <input name="brfile" type="external"/>
+  <output name="brsvg" type="external" ref="birthrate-py.svg"/>
+  <source ref="src/birthrate-plot.py"><![CDATA[]]></source>
+</module>

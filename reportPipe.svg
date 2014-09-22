@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="288px" height="288px" viewBox="0 0 288 288" version="1.1">
+  <metadata xmlns:gridsvg="http://www.stat.auckland.ac.nz/~paul/R/gridSVG/">
+    <gridsvg:generator name="gridSVG" version="1.4-0" time="2014-09-23 11:49:37"/>
+    <gridsvg:argument name="name" value="reportPipe.svg"/>
+    <gridsvg:argument name="exportCoords" value="none"/>
+    <gridsvg:argument name="exportMappings" value="none"/>
+    <gridsvg:argument name="exportJS" value="none"/>
+    <gridsvg:argument name="res" value="72"/>
+    <gridsvg:argument name="prefix" value=""/>
+    <gridsvg:argument name="addClasses" value="FALSE"/>
+    <gridsvg:argument name="indent" value="TRUE"/>
+    <gridsvg:argument name="htmlWrapper" value="FALSE"/>
+    <gridsvg:argument name="usePaths" value="vpPaths"/>
+    <gridsvg:argument name="uniqueNames" value="TRUE"/>
+    <gridsvg:separator name="id.sep" value="."/>
+    <gridsvg:separator name="gPath.sep" value="::"/>
+    <gridsvg:separator name="vpPath.sep" value="::"/>
+  </metadata>
+  <g transform="translate(0, 288) scale(1, -1)">
+    <g id="gridSVG" fill="none" stroke="rgb(0,0,0)" stroke-dasharray="none" stroke-width="0.75" font-size="12" font-family="Helvetica, Arial, FreeSans, Liberation Sans, Nimbus Sans L, sans-serif" opacity="1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-opacity="1" fill-opacity="0" font-weight="normal" font-style="normal">
+      <g id="graphSizeVP.1">
+        <g id="graphSizeVP::graphScaleVP.1">
+          <g id="edge-nonvoters~tidy.1">
+            <g id="curve-nonvoters~tidy-1.1">
+              <polyline id="curve-nonvoters~tidy-1.1.1" points="96.18,233.66 97.91,231.71 99.73,229.62 101.67,227.38 103.72,224.99 105.86,222.47 108.06,219.85 110.29,217.2 112.49,214.55 114.63,211.96 116.67,209.47 118.6,207.1 120.42,204.84 122.08,202.78" stroke="rgb(0,0,0)" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill="none"/>
+            </g>
+            <g id="arrowhead-nonvoters~tidy.1">
+              <defs>
+                <marker id="arrowhead-nonvoters~tidy.1.1.markerStart" refX="-9.36" refY="-3.41" overflow="visible" markerUnits="userSpaceOnUse" markerWidth="9.36" markerHeight="6.81" orient="auto">
+                  <path d="M 0 0 L 9.36 3.41 L 0 6.81" stroke="rgb(0,0,0)" fill="none" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1" transform="rotate(180)"/>
+                </marker>
+                <marker id="arrowhead-nonvoters~tidy.1.1.markerEnd" refX="9.36" refY="3.41" overflow="visible" markerUnits="userSpaceOnUse" markerWidth="9.36" markerHeight="6.81" orient="auto">
+                  <path d="M 0 0 L 9.36 3.41 L 0 6.81" stroke="rgb(0,0,0)" fill="none" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1"/>
+                </marker>
+              </defs>
+              <polyline id="arrowhead-nonvoters~tidy.1.1" points="122.08,202.78 129.06,195.81" marker-end="url(#arrowhead-nonvoters~tidy.1.1.markerEnd)" stroke="rgb(0,0,0)" fill="none" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1"/>
+            </g>
+          </g>
+          <g id="edge-tidy~plot.1">
+            <g id="curve-tidy~plot-1.1">
+              <polyline id="curve-tidy~plot-1.1.1" points="127.06,163.93 125.49,162.06 123.88,160.01 122.21,157.76 120.49,155.33 118.73,152.73 116.95,150.02 115.19,147.27 113.48,144.52 111.84,141.85 110.29,139.3 108.84,136.87 107.45,134.56 107.14,134.04" stroke="rgb(0,0,0)" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill="none"/>
+            </g>
+            <g id="arrowhead-tidy~plot.1">
+              <defs>
+                <marker id="arrowhead-tidy~plot.1.1.markerStart" refX="-9.36" refY="-3.41" overflow="visible" markerUnits="userSpaceOnUse" markerWidth="9.36" markerHeight="6.81" orient="auto">
+                  <path d="M 0 0 L 9.36 3.41 L 0 6.81" stroke="rgb(0,0,0)" fill="none" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1" transform="rotate(180)"/>
+                </marker>
+                <marker id="arrowhead-tidy~plot.1.1.markerEnd" refX="9.36" refY="3.41" overflow="visible" markerUnits="userSpaceOnUse" markerWidth="9.36" markerHeight="6.81" orient="auto">
+                  <path d="M 0 0 L 9.36 3.41 L 0 6.81" stroke="rgb(0,0,0)" fill="none" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1"/>
+                </marker>
+              </defs>
+              <polyline id="arrowhead-tidy~plot.1.1" points="107.14,134.04 101.16,125.07" marker-end="url(#arrowhead-tidy~plot.1.1.markerEnd)" stroke="rgb(0,0,0)" fill="none" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1"/>
+            </g>
+          </g>
+          <g id="edge-tidy~plot.2">
+            <g id="curve-tidy~plot-1.2">
+              <polyline id="curve-tidy~plot-1.2.1" points="136.03,161.93 135.06,159.67 133.94,157.33 132.65,154.87 131.2,152.29 129.6,149.61 127.9,146.88 126.12,144.14 124.32,141.45 122.54,138.84 120.81,136.34 119.15,133.97 117.55,131.69 117.1,131.05" stroke="rgb(0,0,0)" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill="none"/>
+            </g>
+            <g id="arrowhead-tidy~plot.2">
+              <defs>
+                <marker id="arrowhead-tidy~plot.2.1.markerStart" refX="-9.36" refY="-3.41" overflow="visible" markerUnits="userSpaceOnUse" markerWidth="9.36" markerHeight="6.81" orient="auto">
+                  <path d="M 0 0 L 9.36 3.41 L 0 6.81" stroke="rgb(0,0,0)" fill="none" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1" transform="rotate(180)"/>
+                </marker>
+                <marker id="arrowhead-tidy~plot.2.1.markerEnd" refX="9.36" refY="3.41" overflow="visible" markerUnits="userSpaceOnUse" markerWidth="9.36" markerHeight="6.81" orient="auto">
+                  <path d="M 0 0 L 9.36 3.41 L 0 6.81" stroke="rgb(0,0,0)" fill="none" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1"/>
+                </marker>
+              </defs>
+              <polyline id="arrowhead-tidy~plot.2.1" points="117.1,131.05 111.12,123.08" marker-end="url(#arrowhead-tidy~plot.2.1.markerEnd)" stroke="rgb(0,0,0)" fill="none" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1"/>
+            </g>
+          </g>
+          <g id="edge-tidy~calculate.1">
+            <g id="curve-tidy~calculate-1.1">
+              <polyline id="curve-tidy~calculate-1.1.1" points="146.99,161.93 147.98,159.8 149.1,157.54 150.37,155.13 151.77,152.59 153.29,149.94 154.89,147.23 156.53,144.53 158.17,141.9 159.77,139.38 161.31,137 162.78,134.77 163.93,133.04" stroke="rgb(0,0,0)" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill="none"/>
+            </g>
+            <g id="arrowhead-tidy~calculate.1">
+              <defs>
+                <marker id="arrowhead-tidy~calculate.1.1.markerStart" refX="-9.36" refY="-3.41" overflow="visible" markerUnits="userSpaceOnUse" markerWidth="9.36" markerHeight="6.81" orient="auto">
+                  <path d="M 0 0 L 9.36 3.41 L 0 6.81" stroke="rgb(0,0,0)" fill="none" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1" transform="rotate(180)"/>
+                </marker>
+                <marker id="arrowhead-tidy~calculate.1.1.markerEnd" refX="9.36" refY="3.41" overflow="visible" markerUnits="userSpaceOnUse" markerWidth="9.36" markerHeight="6.81" orient="auto">
+                  <path d="M 0 0 L 9.36 3.41 L 0 6.81" stroke="rgb(0,0,0)" fill="none" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1"/>
+                </marker>
+              </defs>
+              <polyline id="arrowhead-tidy~calculate.1.1" points="163.93,133.04 169.9,125.07" marker-end="url(#arrowhead-tidy~calculate.1.1.markerEnd)" stroke="rgb(0,0,0)" fill="none" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1"/>
+            </g>
+          </g>
+          <g id="edge-tidy~calculate.2">
+            <g id="curve-tidy~calculate-1.2">
+              <polyline id="curve-tidy~calculate-1.2.1" points="155.96,163.93 157.53,162.07 159.14,160.07 160.81,157.89 162.53,155.53 164.29,153.01 166.07,150.38 167.83,147.67 169.54,144.95 171.18,142.26 172.73,139.64 174.18,137.1 175.57,134.61 175.88,134.04" stroke="rgb(0,0,0)" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill="none"/>
+            </g>
+            <g id="arrowhead-tidy~calculate.2">
+              <defs>
+                <marker id="arrowhead-tidy~calculate.2.1.markerStart" refX="-9.36" refY="-3.41" overflow="visible" markerUnits="userSpaceOnUse" markerWidth="9.36" markerHeight="6.81" orient="auto">
+                  <path d="M 0 0 L 9.36 3.41 L 0 6.81" stroke="rgb(0,0,0)" fill="none" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1" transform="rotate(180)"/>
+                </marker>
+                <marker id="arrowhead-tidy~calculate.2.1.markerEnd" refX="9.36" refY="3.41" overflow="visible" markerUnits="userSpaceOnUse" markerWidth="9.36" markerHeight="6.81" orient="auto">
+                  <path d="M 0 0 L 9.36 3.41 L 0 6.81" stroke="rgb(0,0,0)" fill="none" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1"/>
+                </marker>
+              </defs>
+              <polyline id="arrowhead-tidy~calculate.2.1" points="175.88,134.04 180.86,126.07" marker-end="url(#arrowhead-tidy~calculate.2.1.markerEnd)" stroke="rgb(0,0,0)" fill="none" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1"/>
+            </g>
+          </g>
+          <g id="edge-population~tidy.1">
+            <g id="curve-population~tidy-1.1">
+              <polyline id="curve-population~tidy-1.1.1" points="186.84,233.66 185.12,231.71 183.34,229.62 181.46,227.38 179.49,224.99 177.42,222.47 175.29,219.85 173.12,217.2 170.95,214.55 168.81,211.96 166.73,209.47 164.72,207.1 162.77,204.84 160.94,202.78" stroke="rgb(0,0,0)" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill="none"/>
+            </g>
+            <g id="arrowhead-population~tidy.1">
+              <defs>
+                <marker id="arrowhead-population~tidy.1.1.markerStart" refX="-9.36" refY="-3.41" overflow="visible" markerUnits="userSpaceOnUse" markerWidth="9.36" markerHeight="6.81" orient="auto">
+                  <path d="M 0 0 L 9.36 3.41 L 0 6.81" stroke="rgb(0,0,0)" fill="none" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1" transform="rotate(180)"/>
+                </marker>
+                <marker id="arrowhead-population~tidy.1.1.markerEnd" refX="9.36" refY="3.41" overflow="visible" markerUnits="userSpaceOnUse" markerWidth="9.36" markerHeight="6.81" orient="auto">
+                  <path d="M 0 0 L 9.36 3.41 L 0 6.81" stroke="rgb(0,0,0)" fill="none" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1"/>
+                </marker>
+              </defs>
+              <polyline id="arrowhead-population~tidy.1.1" points="160.94,202.78 153.96,195.81" marker-end="url(#arrowhead-population~tidy.1.1.markerEnd)" stroke="rgb(0,0,0)" fill="none" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1"/>
+            </g>
+          </g>
+          <g id="edge-calculate~report.1">
+            <g id="curve-calculate~report-1.1">
+              <polyline id="curve-calculate~report-1.1.1" points="186.84,89.21 186.84,87.01 186.84,84.7 186.84,82.25 186.84,79.66 186.84,77 186.84,74.33 186.84,71.73 186.84,69.25 186.84,66.91 186.84,64.7 186.84,64.3" stroke="rgb(0,0,0)" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill="none"/>
+            </g>
+            <g id="arrowhead-calculate~report.1">
+              <defs>
+                <marker id="arrowhead-calculate~report.1.1.markerStart" refX="-9.36" refY="-3.41" overflow="visible" markerUnits="userSpaceOnUse" markerWidth="9.36" markerHeight="6.81" orient="auto">
+                  <path d="M 0 0 L 9.36 3.41 L 0 6.81" stroke="rgb(0,0,0)" fill="none" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1" transform="rotate(180)"/>
+                </marker>
+                <marker id="arrowhead-calculate~report.1.1.markerEnd" refX="9.36" refY="3.41" overflow="visible" markerUnits="userSpaceOnUse" markerWidth="9.36" markerHeight="6.81" orient="auto">
+                  <path d="M 0 0 L 9.36 3.41 L 0 6.81" stroke="rgb(0,0,0)" fill="none" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1"/>
+                </marker>
+              </defs>
+              <polyline id="arrowhead-calculate~report.1.1" points="186.84,64.3 186.84,54.34" marker-end="url(#arrowhead-calculate~report.1.1.markerEnd)" stroke="rgb(0,0,0)" fill="none" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1"/>
+            </g>
+          </g>
+          <g id="nonvoters.1">
+            <g id="box-nonvoters.1">
+              <polygon id="box-nonvoters.1.1" points="132.04,251.6 131.95,252.72 131.66,253.84 131.18,254.96 130.51,256.06 129.66,257.14 128.62,258.2 127.4,259.23 126.01,260.24 124.45,261.21 122.72,262.14 120.84,263.03 118.81,263.87 116.65,264.67 114.34,265.41 111.92,266.1 109.39,266.74 106.75,267.31 104.01,267.82 101.2,268.27 98.31,268.65 95.37,268.97 92.38,269.21 89.35,269.39 86.29,269.49 83.23,269.53 80.16,269.49 77.11,269.39 74.08,269.21 71.09,268.97 68.14,268.65 65.26,268.27 62.44,267.82 59.71,267.31 57.07,266.74 54.53,266.1 52.11,265.41 49.81,264.67 47.64,263.87 45.61,263.03 43.73,262.14 42.01,261.21 40.45,260.24 39.06,259.23 37.84,258.2 36.8,257.14 35.94,256.06 35.28,254.96 34.8,253.84 34.51,252.72 34.41,251.6 34.51,250.47 34.8,249.35 35.28,248.24 35.94,247.14 36.8,246.05 37.84,245 39.06,243.96 40.45,242.96 42.01,241.99 43.73,241.06 45.61,240.17 47.64,239.32 49.81,238.52 52.11,237.78 54.53,237.09 57.07,236.46 59.71,235.88 62.44,235.37 65.26,234.92 68.14,234.54 71.09,234.23 74.08,233.98 77.11,233.81 80.16,233.7 83.23,233.66 86.29,233.7 89.35,233.81 92.38,233.98 95.37,234.23 98.31,234.54 101.2,234.92 104.01,235.37 106.75,235.88 109.39,236.46 111.92,237.09 114.34,237.78 116.65,238.52 118.81,239.32 120.84,240.17 122.72,241.06 124.45,241.99 126.01,242.96 127.4,243.96 128.62,245 129.66,246.05 130.51,247.14 131.18,248.24 131.66,249.35 131.95,250.47 132.04,251.6" stroke="rgb(0,0,0)" fill="none" stroke-opacity="1" fill-opacity="0"/>
+            </g>
+            <g id="label-nonvoters.1">
+              <g id="label-nonvoters.1.1" transform="translate(83.23, 251.6)" stroke-width="0.1">
+                <g id="label-nonvoters.1.1.scale" transform="scale(1, -1)">
+                  <text x="0" y="0" id="label-nonvoters.1.1.text" text-anchor="middle" stroke="rgb(0,0,0)" font-size="14" fill="rgb(0,0,0)" stroke-opacity="1" fill-opacity="1">
+                    <tspan id="label-nonvoters.1.1.tspan.1" dy="5.03" x="0">nonvoters</tspan>
+                  </text>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g id="tidy.1">
+            <g id="box-tidy.1">
+              <polygon id="box-tidy.1.1" points="168.91,179.87 168.85,180.99 168.69,182.11 168.43,183.23 168.06,184.33 167.59,185.41 167.02,186.47 166.35,187.5 165.58,188.5 164.72,189.47 163.77,190.41 162.73,191.3 161.62,192.14 160.42,192.94 159.15,193.68 157.82,194.37 156.42,195.01 154.97,195.58 153.46,196.09 151.91,196.54 150.32,196.92 148.7,197.23 147.05,197.48 145.38,197.66 143.7,197.76 142.01,197.8 140.32,197.76 138.64,197.66 136.97,197.48 135.32,197.23 133.7,196.92 132.11,196.54 130.55,196.09 129.05,195.58 127.59,195.01 126.2,194.37 124.86,193.68 123.59,192.94 122.4,192.14 121.28,191.3 120.25,190.41 119.3,189.47 118.44,188.5 117.67,187.5 117,186.47 116.42,185.41 115.95,184.33 115.58,183.23 115.32,182.11 115.16,180.99 115.11,179.87 115.16,178.74 115.32,177.62 115.58,176.51 115.95,175.41 116.42,174.32 117,173.26 117.67,172.23 118.44,171.23 119.3,170.26 120.25,169.32 121.28,168.43 122.4,167.59 123.59,166.79 124.86,166.05 126.2,165.36 127.59,164.72 129.05,164.15 130.55,163.64 132.11,163.19 133.7,162.81 135.32,162.5 136.97,162.25 138.64,162.07 140.32,161.97 142.01,161.93 143.7,161.97 145.38,162.07 147.05,162.25 148.7,162.5 150.32,162.81 151.91,163.19 153.46,163.64 154.97,164.15 156.42,164.72 157.82,165.36 159.15,166.05 160.42,166.79 161.62,167.59 162.73,168.43 163.77,169.32 164.72,170.26 165.58,171.23 166.35,172.23 167.02,173.26 167.59,174.32 168.06,175.41 168.43,176.51 168.69,177.62 168.85,178.74 168.91,179.87" stroke="rgb(0,0,0)" fill="none" stroke-opacity="1" fill-opacity="0"/>
+            </g>
+            <g id="label-tidy.1">
+              <g id="label-tidy.1.1" transform="translate(142.01, 179.87)" stroke-width="0.1">
+                <g id="label-tidy.1.1.scale" transform="scale(1, -1)">
+                  <text x="0" y="0" id="label-tidy.1.1.text" text-anchor="middle" stroke="rgb(0,0,0)" font-size="14" fill="rgb(0,0,0)" stroke-opacity="1" fill-opacity="1">
+                    <tspan id="label-tidy.1.1.tspan.1" dy="5.03" x="0">tidy</tspan>
+                  </text>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g id="population.1">
+            <g id="box-population.1">
+              <polygon id="box-population.1.1" points="253.59,251.6 253.49,252.72 253.18,253.84 252.67,254.96 251.96,256.06 251.05,257.14 249.95,258.2 248.66,259.23 247.18,260.24 245.52,261.21 243.7,262.14 241.7,263.03 239.55,263.87 237.25,264.67 234.81,265.41 232.23,266.1 229.54,266.74 226.74,267.31 223.84,267.82 220.85,268.27 217.79,268.65 214.67,268.97 211.49,269.21 208.28,269.39 205.04,269.49 201.78,269.53 198.53,269.49 195.29,269.39 192.08,269.21 188.9,268.97 185.77,268.65 182.71,268.27 179.73,267.82 176.83,267.31 174.02,266.74 171.33,266.1 168.76,265.41 166.32,264.67 164.02,263.87 161.87,263.03 159.87,262.14 158.04,261.21 156.39,260.24 154.91,259.23 153.62,258.2 152.51,257.14 151.61,256.06 150.9,254.96 150.39,253.84 150.08,252.72 149.98,251.6 150.08,250.47 150.39,249.35 150.9,248.24 151.61,247.14 152.51,246.05 153.62,245 154.91,243.96 156.39,242.96 158.04,241.99 159.87,241.06 161.87,240.17 164.02,239.32 166.32,238.52 168.76,237.78 171.33,237.09 174.02,236.46 176.83,235.88 179.73,235.37 182.71,234.92 185.77,234.54 188.9,234.23 192.08,233.98 195.29,233.81 198.53,233.7 201.78,233.66 205.04,233.7 208.28,233.81 211.49,233.98 214.67,234.23 217.79,234.54 220.85,234.92 223.84,235.37 226.74,235.88 229.54,236.46 232.23,237.09 234.81,237.78 237.25,238.52 239.55,239.32 241.7,240.17 243.7,241.06 245.52,241.99 247.18,242.96 248.66,243.96 249.95,245 251.05,246.05 251.96,247.14 252.67,248.24 253.18,249.35 253.49,250.47 253.59,251.6" stroke="rgb(0,0,0)" fill="none" stroke-opacity="1" fill-opacity="0"/>
+            </g>
+            <g id="label-population.1">
+              <g id="label-population.1.1" transform="translate(201.78, 251.6)" stroke-width="0.1">
+                <g id="label-population.1.1.scale" transform="scale(1, -1)">
+                  <text x="0" y="0" id="label-population.1.1.text" text-anchor="middle" stroke="rgb(0,0,0)" font-size="14" fill="rgb(0,0,0)" stroke-opacity="1" fill-opacity="1">
+                    <tspan id="label-population.1.1.tspan.1" dy="5.03" x="0">population</tspan>
+                  </text>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g id="plot.1">
+            <g id="box-plot.1">
+              <polygon id="box-plot.1.1" points="124.07,108.13 124.02,109.26 123.86,110.38 123.6,111.49 123.23,112.59 122.76,113.68 122.19,114.74 121.51,115.77 120.75,116.77 119.89,117.74 118.94,118.68 117.9,119.57 116.78,120.41 115.59,121.21 114.32,121.95 112.99,122.64 111.59,123.28 110.13,123.85 108.63,124.36 107.08,124.81 105.49,125.19 103.87,125.5 102.22,125.75 100.55,125.93 98.86,126.03 97.18,126.07 95.49,126.03 93.8,125.93 92.14,125.75 90.49,125.5 88.86,125.19 87.27,124.81 85.72,124.36 84.22,123.85 82.76,123.28 81.36,122.64 80.03,121.95 78.76,121.21 77.57,120.41 76.45,119.57 75.41,118.68 74.46,117.74 73.6,116.77 72.84,115.77 72.17,114.74 71.59,113.68 71.12,112.59 70.75,111.49 70.49,110.38 70.33,109.26 70.28,108.13 70.33,107.01 70.49,105.89 70.75,104.77 71.12,103.67 71.59,102.59 72.17,101.53 72.84,100.5 73.6,99.5 74.46,98.53 75.41,97.59 76.45,96.7 77.57,95.86 78.76,95.06 80.03,94.32 81.36,93.63 82.76,92.99 84.22,92.42 85.72,91.91 87.27,91.46 88.86,91.08 90.49,90.77 92.14,90.52 93.8,90.34 95.49,90.24 97.18,90.2 98.86,90.24 100.55,90.34 102.22,90.52 103.87,90.77 105.49,91.08 107.08,91.46 108.63,91.91 110.13,92.42 111.59,92.99 112.99,93.63 114.32,94.32 115.59,95.06 116.78,95.86 117.9,96.7 118.94,97.59 119.89,98.53 120.75,99.5 121.51,100.5 122.19,101.53 122.76,102.59 123.23,103.67 123.6,104.77 123.86,105.89 124.02,107.01 124.07,108.13" stroke="rgb(0,0,0)" fill="none" stroke-opacity="1" fill-opacity="0"/>
+            </g>
+            <g id="label-plot.1">
+              <g id="label-plot.1.1" transform="translate(97.18, 108.13)" stroke-width="0.1">
+                <g id="label-plot.1.1.scale" transform="scale(1, -1)">
+                  <text x="0" y="0" id="label-plot.1.1.text" text-anchor="middle" stroke="rgb(0,0,0)" font-size="14" fill="rgb(0,0,0)" stroke-opacity="1" fill-opacity="1">
+                    <tspan id="label-plot.1.1.tspan.1" dy="5.03" x="0">plot</tspan>
+                  </text>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g id="calculate.1">
+            <g id="box-calculate.1">
+              <polygon id="box-calculate.1.1" points="231.67,108.13 231.58,109.26 231.32,110.38 230.88,111.49 230.26,112.59 229.48,113.68 228.52,114.74 227.4,115.77 226.13,116.77 224.69,117.74 223.11,118.68 221.38,119.57 219.52,120.41 217.53,121.21 215.42,121.95 213.19,122.64 210.86,123.28 208.44,123.85 205.93,124.36 203.34,124.81 200.69,125.19 197.99,125.5 195.24,125.75 192.46,125.93 189.65,126.03 186.84,126.07 184.02,126.03 181.22,125.93 178.44,125.75 175.69,125.5 172.99,125.19 170.34,124.81 167.75,124.36 165.24,123.85 162.82,123.28 160.49,122.64 158.26,121.95 156.15,121.21 154.16,120.41 152.3,119.57 150.57,118.68 148.99,117.74 147.55,116.77 146.27,115.77 145.16,114.74 144.2,113.68 143.42,112.59 142.8,111.49 142.36,110.38 142.1,109.26 142.01,108.13 142.1,107.01 142.36,105.89 142.8,104.77 143.42,103.67 144.2,102.59 145.16,101.53 146.27,100.5 147.55,99.5 148.99,98.53 150.57,97.59 152.3,96.7 154.16,95.86 156.15,95.06 158.26,94.32 160.49,93.63 162.82,92.99 165.24,92.42 167.75,91.91 170.34,91.46 172.99,91.08 175.69,90.77 178.44,90.52 181.22,90.34 184.02,90.24 186.84,90.2 189.65,90.24 192.46,90.34 195.24,90.52 197.99,90.77 200.69,91.08 203.34,91.46 205.93,91.91 208.44,92.42 210.86,92.99 213.19,93.63 215.42,94.32 217.53,95.06 219.52,95.86 221.38,96.7 223.11,97.59 224.69,98.53 226.13,99.5 227.4,100.5 228.52,101.53 229.48,102.59 230.26,103.67 230.88,104.77 231.32,105.89 231.58,107.01 231.67,108.13" stroke="rgb(0,0,0)" fill="none" stroke-opacity="1" fill-opacity="0"/>
+            </g>
+            <g id="label-calculate.1">
+              <g id="label-calculate.1.1" transform="translate(186.84, 108.13)" stroke-width="0.1">
+                <g id="label-calculate.1.1.scale" transform="scale(1, -1)">
+                  <text x="0" y="0" id="label-calculate.1.1.text" text-anchor="middle" stroke="rgb(0,0,0)" font-size="14" fill="rgb(0,0,0)" stroke-opacity="1" fill-opacity="1">
+                    <tspan id="label-calculate.1.1.tspan.1" dy="5.03" x="0">calculate</tspan>
+                  </text>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g id="report.1">
+            <g id="box-report.1">
+              <polygon id="box-report.1.1" points="220.71,36.4 220.65,37.53 220.45,38.65 220.11,39.76 219.65,40.86 219.05,41.95 218.33,43 217.49,44.04 216.52,45.04 215.44,46.01 214.24,46.94 212.94,47.83 211.53,48.68 210.03,49.48 208.43,50.22 206.75,50.91 204.99,51.54 203.16,52.12 201.26,52.63 199.31,53.08 197.31,53.46 195.26,53.77 193.19,54.02 191.08,54.19 188.97,54.3 186.84,54.34 184.71,54.3 182.59,54.19 180.49,54.02 178.42,53.77 176.37,53.46 174.37,53.08 172.42,52.63 170.52,52.12 168.69,51.54 166.93,50.91 165.25,50.22 163.65,49.48 162.15,48.68 160.74,47.83 159.44,46.94 158.24,46.01 157.16,45.04 156.19,44.04 155.35,43 154.62,41.95 154.03,40.86 153.57,39.76 153.23,38.65 153.03,37.53 152.97,36.4 153.03,35.28 153.23,34.16 153.57,33.04 154.03,31.94 154.62,30.86 155.35,29.8 156.19,28.77 157.16,27.76 158.24,26.79 159.44,25.86 160.74,24.97 162.15,24.13 163.65,23.33 165.25,22.59 166.93,21.9 168.69,21.26 170.52,20.69 172.42,20.18 174.37,19.73 176.37,19.35 178.42,19.03 180.49,18.79 182.59,18.61 184.71,18.51 186.84,18.47 188.97,18.51 191.08,18.61 193.19,18.79 195.26,19.03 197.31,19.35 199.31,19.73 201.26,20.18 203.16,20.69 204.99,21.26 206.75,21.9 208.43,22.59 210.03,23.33 211.53,24.13 212.94,24.97 214.24,25.86 215.44,26.79 216.52,27.76 217.49,28.77 218.33,29.8 219.05,30.86 219.65,31.94 220.11,33.04 220.45,34.16 220.65,35.28 220.71,36.4" stroke="rgb(0,0,0)" fill="none" stroke-opacity="1" fill-opacity="0"/>
+            </g>
+            <g id="label-report.1">
+              <g id="label-report.1.1" transform="translate(186.84, 36.4)" stroke-width="0.1">
+                <g id="label-report.1.1.scale" transform="scale(1, -1)">
+                  <text x="0" y="0" id="label-report.1.1.text" text-anchor="middle" stroke="rgb(0,0,0)" font-size="14" fill="rgb(0,0,0)" stroke-opacity="1" fill-opacity="1">
+                    <tspan id="label-report.1.1.tspan.1" dy="5.03" x="0">report</tspan>
+                  </text>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

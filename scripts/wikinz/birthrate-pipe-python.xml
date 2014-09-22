@@ -1,0 +1,18 @@
+<pipeline xmlns="http://www.openapi.org/2014/" version="0.1">
+  <component name="brsource" ref="brsource.xml" type="module"/>
+  <component name="birthrate" ref="birthrate.xml" type="module"/>
+  <component name="brplot-R" ref="brplot-R.xml" type="module"/>
+  <component name="brplot-py" ref="brplot-py.xml" type="module"/>
+  <pipe>
+    <start component="brsource" output="brsrcfile"/>
+    <end component="birthrate" input="brsrcfile"/>
+  </pipe>
+  <pipe>
+    <start component="birthrate" output="brfile"/>
+    <end component="brplot-R" input="brfile"/>
+  </pipe>
+  <pipe>
+    <start component="birthrate" output="brfile"/>
+    <end component="brplot-py" input="brfile"/>
+  </pipe>
+</pipeline>

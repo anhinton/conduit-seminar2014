@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<module xmlns="http://www.openapi.org/2014/" version="0.1">
+  <platform name="R"/>
+  <description><![CDATA[]]></description>
+  <input name="srcfile" type="external"/>
+  <output name="brfile" type="external" ref="clean.csv"/>
+  <output name="index" type="internal"/>
+  <output name="names" type="internal"/>
+  <source ref="src/clean-file.R"><![CDATA[]]></source>
+  <source><![CDATA[index <- 1:2; names <- c("year", "birthrate")]]></source>
+</module>

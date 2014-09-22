@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<module xmlns="http://www.openapi.org/2014/">
+  <platform name="R"/>
+  <output name="index" type="internal"/>
+  <source><![CDATA[index <- 1]]></source>
+</module>

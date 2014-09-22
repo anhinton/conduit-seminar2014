@@ -1,0 +1,26 @@
+<pipeline xmlns="http://www.openapi.org/2014/">
+  <component name="brsrc" ref="brsrc.xml" type="module"/>
+  <component name="br" ref="br.xml" type="module"/>
+  <component name="subset-csv" ref="subset-csv.xml" type="module"/>
+  <component name="timeseries-csv" ref="timeseries-csv.xml" type="module"/>
+  <pipe>
+    <start component="brsrc" output="brsrcfile"/>
+    <end component="br" input="srcfile"/>
+  </pipe>
+  <pipe>
+    <start component="br" output="brfile"/>
+    <end component="subset-csv" input="filename"/>
+  </pipe>
+  <pipe>
+    <start component="br" output="index"/>
+    <end component="subset-csv" input="index"/>
+  </pipe>
+  <pipe>
+    <start component="br" output="names"/>
+    <end component="subset-csv" input="names"/>
+  </pipe>
+  <pipe>
+    <start component="subset-csv" output="subset"/>
+    <end component="timeseries-csv" input="filename"/>
+  </pipe>
+</pipeline> 

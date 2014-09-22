@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<module xmlns="http://www.openapi.org/2014/" version="0.1">
+  <platform name="R"/>
+  <description><![CDATA[This module takes a CSV file and produces a cleaner version, also as a CSV file, called 'birthrate.csv'.  It is designed specifically to create a clean version of 'LTD404701_20140509_101154_10.csv' that can be read directly by statistical software.]]></description>
+  <input name="brsrcfile" type="external"/>
+  <output name="brfile" type="external" ref="birthrate.csv"/>
+  <source ref="src/birthrate-file.R"><![CDATA[]]></source>
+</module>

@@ -1,0 +1,5 @@
+
+# Function to generate nice long-form data frame from World Bank CSV export
+
+cleanWorldBank <- function(filename) {
+}

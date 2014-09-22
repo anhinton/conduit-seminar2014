@@ -1,0 +1,26 @@
+<pipeline xmlns="http://www.openapi.org/2014/">
+  <component name="mortsource" ref="mortsource.xml" type="module"/>
+  <component name="matmort" ref="matmort.xml" type="module"/>
+  <component name="subset-csv" ref="subset-csv.xml" type="module"/>
+  <component name="timeseries-csv" ref="timeseries-csv.xml" type="module"/>
+  <pipe>
+    <start component="mortsource" output="mortsrcfile"/>
+    <end component="matmort" input="srcfile"/>
+  </pipe>
+  <pipe>
+    <start component="matmort" output="mortfile"/>
+    <end component="subset-csv" input="filename"/>
+  </pipe>
+  <pipe>
+    <start component="matmort" output="index"/>
+    <end component="subset-csv" input="index"/>
+  </pipe>
+  <pipe>
+    <start component="matmort" output="names"/>
+    <end component="subset-csv" input="names"/>
+  </pipe>
+  <pipe>
+    <start component="subset-csv" output="subset"/>
+    <end component="timeseries-csv" input="filename"/>
+  </pipe>
+</pipeline>

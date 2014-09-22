@@ -1,0 +1,30 @@
+
+source("tidy.R")
+
+library(gridSVG)
+library(lattice)
+
+gridsvg("non-voters.svg")
+barchart(nonvoters$X2011 ~ nonvoters$AgeGroup,
+         origin=0,
+         ylab="Percent", xlab="Age Group",
+         main="Percentage of Eligible Voters Who Did Not Vote",
+         sub="Source: Statistics New Zealand (New Zealand General Social Survey)")
+grid.edit("plot_01.sub", gp=gpar(col="grey", cex=.7),
+          just="top")
+grid.hyperlink("plot_01.sub",
+               href="http://www.stats.govt.nz/browse_for_stats/people_and_communities/Well-being/civic-human-rights/non-voters-2008-2011-gen-elections.aspx")
+dev.off()
+
+gridsvg("population.svg")
+barchart(pop2013grouped$Value/100000 ~ pop2013grouped$AgeGroup,
+         origin=0,
+         ylab="Population (100,000s)", xlab="Age Group",
+         main="Estimated Population (June 2013)",
+         sub="Source: Statistics New Zealand (NZ.Stat)")
+grid.edit("plot_01.sub", gp=gpar(col="grey", cex=.7),
+          just="top")
+grid.hyperlink("plot_01.sub",
+               href="http://nzdotstat.stats.govt.nz/wbos/Index.aspx")
+dev.off()
+

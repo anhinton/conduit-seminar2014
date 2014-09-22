@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="504px" height="504px" viewBox="0 0 504 504" version="1.1">
+  <metadata xmlns:gridsvg="http://www.stat.auckland.ac.nz/~paul/R/gridSVG/">
+    <gridsvg:generator name="gridSVG" version="1.4-0" time="2014-09-23 11:35:49"/>
+    <gridsvg:argument name="name" value="population.svg"/>
+    <gridsvg:argument name="exportCoords" value="none"/>
+    <gridsvg:argument name="exportMappings" value="none"/>
+    <gridsvg:argument name="exportJS" value="none"/>
+    <gridsvg:argument name="res" value="72"/>
+    <gridsvg:argument name="prefix" value=""/>
+    <gridsvg:argument name="addClasses" value="FALSE"/>
+    <gridsvg:argument name="indent" value="TRUE"/>
+    <gridsvg:argument name="htmlWrapper" value="FALSE"/>
+    <gridsvg:argument name="usePaths" value="vpPaths"/>
+    <gridsvg:argument name="uniqueNames" value="TRUE"/>
+    <gridsvg:separator name="id.sep" value="."/>
+    <gridsvg:separator name="gPath.sep" value="::"/>
+    <gridsvg:separator name="vpPath.sep" value="::"/>
+  </metadata>
+  <g transform="translate(0, 504) scale(1, -1)">
+    <g id="gridSVG" fill="none" stroke="rgb(0,0,0)" stroke-dasharray="none" stroke-width="0.75" font-size="12" font-family="Helvetica, Arial, FreeSans, Liberation Sans, Nimbus Sans L, sans-serif" opacity="1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-opacity="1" fill-opacity="0" font-weight="normal" font-style="normal">
+      <g id="poplot.background.1">
+        <rect id="poplot.background.1.1" x="0" y="0" width="504" height="504" fill="none" stroke="none" stroke-opacity="0" fill-opacity="0"/>
+      </g>
+      <g id="poplot.toplevel.vp.1" font-size="12">
+        <g id="poplot.toplevel.vp::poplot.main.vp.1">
+          <g id="poplot.main.1">
+            <g id="poplot.main.1.1" transform="translate(252, 492.97)" stroke-width="0.1">
+              <g id="poplot.main.1.1.scale" transform="scale(1, -1)">
+                <text x="0" y="0" id="poplot.main.1.1.text" text-anchor="middle" opacity="1" stroke="rgb(0,0,0)" fill="rgb(0,0,0)" stroke-opacity="1" fill-opacity="1" font-size="14.4" font-weight="bold" font-style="normal">
+                  <tspan id="poplot.main.1.1.tspan.1" dy="5.03" x="0">Estimated Population (June 2013)</tspan>
+                </text>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g id="poplot.toplevel.vp::poplot.sub.vp.1">
+          <a xlink:href="http://nzdotstat.stats.govt.nz/wbos/Index.aspx">
+            <g id="poplot.sub.1">
+              <g id="poplot.sub.1.1" transform="translate(252, 10.31)" stroke-width="0.1">
+                <g id="poplot.sub.1.1.scale" transform="scale(1, -1)">
+                  <text x="0" y="0" id="poplot.sub.1.1.text" text-anchor="middle" opacity="1" stroke="rgb(190,190,190)" fill="rgb(190,190,190)" stroke-opacity="1" fill-opacity="1" font-size="8.4" font-weight="bold" font-style="normal">
+                    <tspan id="poplot.sub.1.1.tspan.1" dy="5.74" x="0">Source: Statistics New Zealand (NZ.Stat)</tspan>
+                  </text>
+                </g>
+              </g>
+            </g>
+          </a>
+        </g>
+        <g id="poplot.toplevel.vp::poplot.xlab.vp.1">
+          <g id="poplot.xlab.1">
+            <g id="poplot.xlab.1.1" transform="translate(261.87, 24.92)" stroke-width="0.1">
+              <g id="poplot.xlab.1.1.scale" transform="scale(1, -1)">
+                <text x="0" y="0" id="poplot.xlab.1.1.text" text-anchor="middle" opacity="1" stroke="rgb(0,0,0)" fill="rgb(0,0,0)" stroke-opacity="1" fill-opacity="1" font-size="12" font-weight="normal" font-style="normal">
+                  <tspan id="poplot.xlab.1.1.tspan.1" dy="4.31" x="0">Age Group</tspan>
+                </text>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g id="poplot.toplevel.vp::poplot.ylab.vp.1">
+          <g id="poplot.ylab.1">
+            <g id="poplot.ylab.1.1" transform="translate(10.31, 259.18)" stroke-width="0.1">
+              <g id="poplot.ylab.1.1.scale" transform="scale(1, -1)">
+                <text x="0" y="0" id="poplot.ylab.1.1.text" transform="rotate(-90)" text-anchor="middle" opacity="1" stroke="rgb(0,0,0)" fill="rgb(0,0,0)" stroke-opacity="1" fill-opacity="1" font-size="12" font-weight="normal" font-style="normal">
+                  <tspan id="poplot.ylab.1.1.tspan.1" dy="4.31" x="0">Population (100,000s)</tspan>
+                </text>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g id="poplot.toplevel.vp::poplot.figure.vp.1"/>
+        <defs>
+          <clipPath id="poplot.toplevel.vp::poplot.panel.1.1.vp.1.clipPath">
+            <rect x="48.74" y="53.75" width="426.25" height="410.86" fill="none" stroke="none"/>
+          </clipPath>
+        </defs>
+        <g id="poplot.toplevel.vp::poplot.panel.1.1.vp.1" clip-path="url(#poplot.toplevel.vp::poplot.panel.1.1.vp.1.clipPath)"/>
+        <g id="poplot.toplevel.vp::poplot.strip.1.1.off.vp.1"/>
+        <g id="poplot.toplevel.vp::poplot.strip.left.1.1.off.vp.1">
+          <g id="poplot.ticks.left.panel.1.1.1">
+            <polyline id="poplot.ticks.left.panel.1.1.1.1" points="48.74,78.98 43.07,78.98" stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="0.75" stroke-opacity="1" fill="none"/>
+            <polyline id="poplot.ticks.left.panel.1.1.1.2" points="48.74,142.12 43.07,142.12" stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="0.75" stroke-opacity="1" fill="none"/>
+            <polyline id="poplot.ticks.left.panel.1.1.1.3" points="48.74,205.27 43.07,205.27" stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="0.75" stroke-opacity="1" fill="none"/>
+            <polyline id="poplot.ticks.left.panel.1.1.1.4" points="48.74,268.41 43.07,268.41" stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="0.75" stroke-opacity="1" fill="none"/>
+            <polyline id="poplot.ticks.left.panel.1.1.1.5" points="48.74,331.55 43.07,331.55" stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="0.75" stroke-opacity="1" fill="none"/>
+            <polyline id="poplot.ticks.left.panel.1.1.1.6" points="48.74,394.7 43.07,394.7" stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="0.75" stroke-opacity="1" fill="none"/>
+            <polyline id="poplot.ticks.left.panel.1.1.1.7" points="48.74,457.84 43.07,457.84" stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="0.75" stroke-opacity="1" fill="none"/>
+          </g>
+          <g id="poplot.ticklabels.left.panel.1.1.1">
+            <g id="poplot.ticklabels.left.panel.1.1.1.1" transform="translate(37.41, 78.98)" stroke-width="0.1">
+              <g id="poplot.ticklabels.left.panel.1.1.1.1.scale" transform="scale(1, -1)">
+                <text x="0" y="0" id="poplot.ticklabels.left.panel.1.1.1.1.text" text-anchor="end" stroke="rgb(0,0,0)" opacity="1" fill="rgb(0,0,0)" stroke-opacity="1" fill-opacity="1" font-size="9.6" font-weight="normal" font-style="normal">
+                  <tspan id="poplot.ticklabels.left.panel.1.1.1.1.tspan.1" dy="3.59" x="0">0</tspan>
+                </text>
+              </g>
+            </g>
+            <g id="poplot.ticklabels.left.panel.1.1.1.2" transform="translate(37.41, 142.12)" stroke-width="0.1">
+              <g id="poplot.ticklabels.left.panel.1.1.1.2.scale" transform="scale(1, -1)">
+                <text x="0" y="0" id="poplot.ticklabels.left.panel.1.1.1.2.text" text-anchor="end" stroke="rgb(0,0,0)" opacity="1" fill="rgb(0,0,0)" stroke-opacity="1" fill-opacity="1" font-size="9.6" font-weight="normal" font-style="normal">
+                  <tspan id="poplot.ticklabels.left.panel.1.1.1.2.tspan.1" dy="3.59" x="0">2</tspan>
+                </text>
+              </g>
+            </g>
+            <g id="poplot.ticklabels.left.panel.1.1.1.3" transform="translate(37.41, 205.27)" stroke-width="0.1">
+              <g id="poplot.ticklabels.left.panel.1.1.1.3.scale" transform="scale(1, -1)">
+                <text x="0" y="0" id="poplot.ticklabels.left.panel.1.1.1.3.text" text-anchor="end" stroke="rgb(0,0,0)" opacity="1" fill="rgb(0,0,0)" stroke-opacity="1" fill-opacity="1" font-size="9.6" font-weight="normal" font-style="normal">
+                  <tspan id="poplot.ticklabels.left.panel.1.1.1.3.tspan.1" dy="3.59" x="0">4</tspan>
+                </text>
+              </g>
+            </g>
+            <g id="poplot.ticklabels.left.panel.1.1.1.4" transform="translate(37.41, 268.41)" stroke-width="0.1">
+              <g id="poplot.ticklabels.left.panel.1.1.1.4.scale" transform="scale(1, -1)">
+                <text x="0" y="0" id="poplot.ticklabels.left.panel.1.1.1.4.text" text-anchor="end" stroke="rgb(0,0,0)" opacity="1" fill="rgb(0,0,0)" stroke-opacity="1" fill-opacity="1" font-size="9.6" font-weight="normal" font-style="normal">
+                  <tspan id="poplot.ticklabels.left.panel.1.1.1.4.tspan.1" dy="3.59" x="0">6</tspan>
+                </text>
+              </g>
+            </g>
+            <g id="poplot.ticklabels.left.panel.1.1.1.5" transform="translate(37.41, 331.55)" stroke-width="0.1">
+              <g id="poplot.ticklabels.left.panel.1.1.1.5.scale" transform="scale(1, -1)">
+                <text x="0" y="0" id="poplot.ticklabels.left.panel.1.1.1.5.text" text-anchor="end" stroke="rgb(0,0,0)" opacity="1" fill="rgb(0,0,0)" stroke-opacity="1" fill-opacity="1" font-size="9.6" font-weight="normal" font-style="normal">
+                  <tspan id="poplot.ticklabels.left.panel.1.1.1.5.tspan.1" dy="3.59" x="0">8</tspan>
+                </text>
+              </g>
+            </g>
+            <g id="poplot.ticklabels.left.panel.1.1.1.6" transform="translate(37.41, 394.7)" stroke-width="0.1">
+              <g id="poplot.ticklabels.left.panel.1.1.1.6.scale" transform="scale(1, -1)">
+                <text x="0" y="0" id="poplot.ticklabels.left.panel.1.1.1.6.text" text-anchor="end" stroke="rgb(0,0,0)" opacity="1" fill="rgb(0,0,0)" stroke-opacity="1" fill-opacity="1" font-size="9.6" font-weight="normal" font-style="normal">
+                  <tspan id="poplot.ticklabels.left.panel.1.1.1.6.tspan.1" dy="3.59" x="0">10</tspan>
+                </text>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g id="poplot.toplevel.vp::poplot.panel.1.1.off.vp.1">
+          <g id="poplot.ticklabels.bottom.panel.1.1.1">
+            <g id="poplot.ticklabels.bottom.panel.1.1.1.1" transform="translate(97.93, 48.08)" stroke-width="0.1">
+              <g id="poplot.ticklabels.bottom.panel.1.1.1.1.scale" transform="scale(1, -1)">
+                <text x="0" y="0" id="poplot.ticklabels.bottom.panel.1.1.1.1.text" text-anchor="middle" stroke="rgb(0,0,0)" opacity="1" fill="rgb(0,0,0)" stroke-opacity="1" fill-opacity="1" font-size="9.6" font-weight="normal" font-style="normal">
+                  <tspan id="poplot.ticklabels.bottom.panel.1.1.1.1.tspan.1" dy="7.18" x="0">17 under</tspan>
+                </text>
+              </g>
+            </g>
+            <g id="poplot.ticklabels.bottom.panel.1.1.1.2" transform="translate(179.9, 48.08)" stroke-width="0.1">
+              <g id="poplot.ticklabels.bottom.panel.1.1.1.2.scale" transform="scale(1, -1)">
+                <text x="0" y="0" id="poplot.ticklabels.bottom.panel.1.1.1.2.text" text-anchor="middle" stroke="rgb(0,0,0)" opacity="1" fill="rgb(0,0,0)" stroke-opacity="1" fill-opacity="1" font-size="9.6" font-weight="normal" font-style="normal">
+                  <tspan id="poplot.ticklabels.bottom.panel.1.1.1.2.tspan.1" dy="7.18" x="0">18 to 24</tspan>
+                </text>
+              </g>
+            </g>
+            <g id="poplot.ticklabels.bottom.panel.1.1.1.3" transform="translate(261.87, 48.08)" stroke-width="0.1">
+              <g id="poplot.ticklabels.bottom.panel.1.1.1.3.scale" transform="scale(1, -1)">
+                <text x="0" y="0" id="poplot.ticklabels.bottom.panel.1.1.1.3.text" text-anchor="middle" stroke="rgb(0,0,0)" opacity="1" fill="rgb(0,0,0)" stroke-opacity="1" fill-opacity="1" font-size="9.6" font-weight="normal" font-style="normal">
+                  <tspan id="poplot.ticklabels.bottom.panel.1.1.1.3.tspan.1" dy="7.18" x="0">25 to 44</tspan>
+                </text>
+              </g>
+            </g>
+            <g id="poplot.ticklabels.bottom.panel.1.1.1.4" transform="translate(343.84, 48.08)" stroke-width="0.1">
+              <g id="poplot.ticklabels.bottom.panel.1.1.1.4.scale" transform="scale(1, -1)">
+                <text x="0" y="0" id="poplot.ticklabels.bottom.panel.1.1.1.4.text" text-anchor="middle" stroke="rgb(0,0,0)" opacity="1" fill="rgb(0,0,0)" stroke-opacity="1" fill-opacity="1" font-size="9.6" font-weight="normal" font-style="normal">
+                  <tspan id="poplot.ticklabels.bottom.panel.1.1.1.4.tspan.1" dy="7.18" x="0">45 to 64</tspan>
+                </text>
+              </g>
+            </g>
+            <g id="poplot.ticklabels.bottom.panel.1.1.1.5" transform="translate(425.81, 48.08)" stroke-width="0.1">
+              <g id="poplot.ticklabels.bottom.panel.1.1.1.5.scale" transform="scale(1, -1)">
+                <text x="0" y="0" id="poplot.ticklabels.bottom.panel.1.1.1.5.text" text-anchor="middle" stroke="rgb(0,0,0)" opacity="1" fill="rgb(0,0,0)" stroke-opacity="1" fill-opacity="1" font-size="9.6" font-weight="normal" font-style="normal">
+                  <tspan id="poplot.ticklabels.bottom.panel.1.1.1.5.tspan.1" dy="7.18" x="0">65 over</tspan>
+                </text>
+              </g>
+            </g>
+          </g>
+          <g id="poplot.ticks.right.panel.1.1.1">
+            <polyline id="poplot.ticks.right.panel.1.1.1.1" points="474.99,78.98 480.66,78.98" stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="0.75" stroke-opacity="1" fill="none"/>
+            <polyline id="poplot.ticks.right.panel.1.1.1.2" points="474.99,142.12 480.66,142.12" stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="0.75" stroke-opacity="1" fill="none"/>
+            <polyline id="poplot.ticks.right.panel.1.1.1.3" points="474.99,205.27 480.66,205.27" stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="0.75" stroke-opacity="1" fill="none"/>
+            <polyline id="poplot.ticks.right.panel.1.1.1.4" points="474.99,268.41 480.66,268.41" stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="0.75" stroke-opacity="1" fill="none"/>
+            <polyline id="poplot.ticks.right.panel.1.1.1.5" points="474.99,331.55 480.66,331.55" stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="0.75" stroke-opacity="1" fill="none"/>
+            <polyline id="poplot.ticks.right.panel.1.1.1.6" points="474.99,394.7 480.66,394.7" stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="0.75" stroke-opacity="1" fill="none"/>
+            <polyline id="poplot.ticks.right.panel.1.1.1.7" points="474.99,457.84 480.66,457.84" stroke="rgb(0,0,0)" opacity="1" stroke-dasharray="none" stroke-width="0.75" stroke-opacity="1" fill="none"/>
+          </g>
+        </g>
+        <defs>
+          <clipPath id="poplot.toplevel.vp::poplot.panel.1.1.vp.2.clipPath">
+            <rect x="48.74" y="53.75" width="426.25" height="410.86" fill="none" stroke="none"/>
+          </clipPath>
+        </defs>
+        <g id="poplot.toplevel.vp::poplot.panel.1.1.vp.2" clip-path="url(#poplot.toplevel.vp::poplot.panel.1.1.vp.2.clipPath)">
+          <g id="poplot.barchart.abline.h.panel.1.1.1">
+            <polyline id="poplot.barchart.abline.h.panel.1.1.1.1" points="48.74,78.98 474.99,78.98" stroke="rgb(230,230,230)" stroke-dasharray="none" stroke-width="0.75" opacity="1" stroke-opacity="1" fill="none"/>
+          </g>
+          <g id="poplot.barchart.rect.panel.1.1.1">
+            <rect id="poplot.barchart.rect.panel.1.1.1.1" x="70.6" y="78.98" width="54.65" height="345.78" fill="rgb(0,255,255)" stroke="rgb(0,0,0)" stroke-dasharray="none" stroke-width="0.75" opacity="1" stroke-opacity="1" fill-opacity="1"/>
+            <rect id="poplot.barchart.rect.panel.1.1.1.2" x="152.57" y="78.98" width="54.65" height="139.22" fill="rgb(0,255,255)" stroke="rgb(0,0,0)" stroke-dasharray="none" stroke-width="0.75" opacity="1" stroke-opacity="1" fill-opacity="1"/>
+            <rect id="poplot.barchart.rect.panel.1.1.1.3" x="234.54" y="78.98" width="54.65" height="360.4" fill="rgb(0,255,255)" stroke="rgb(0,0,0)" stroke-dasharray="none" stroke-width="0.75" opacity="1" stroke-opacity="1" fill-opacity="1"/>
+            <rect id="poplot.barchart.rect.panel.1.1.1.4" x="316.52" y="78.98" width="54.65" height="359.42" fill="rgb(0,255,255)" stroke="rgb(0,0,0)" stroke-dasharray="none" stroke-width="0.75" opacity="1" stroke-opacity="1" fill-opacity="1"/>
+            <rect id="poplot.barchart.rect.panel.1.1.1.5" x="398.49" y="78.98" width="54.65" height="197.64" fill="rgb(0,255,255)" stroke="rgb(0,0,0)" stroke-dasharray="none" stroke-width="0.75" opacity="1" stroke-opacity="1" fill-opacity="1"/>
+          </g>
+        </g>
+        <g id="poplot.toplevel.vp::poplot.panel.1.1.off.vp.2">
+          <g id="poplot.border.panel.1.1.1">
+            <rect id="poplot.border.panel.1.1.1.1" x="48.74" y="53.75" width="426.25" height="410.86" stroke="rgb(0,0,0)" stroke-dasharray="none" stroke-width="0.75" opacity="1" fill="none" stroke-opacity="1" fill-opacity="0"/>
+          </g>
+        </g>
+        <g id="poplot.toplevel.vp::poplot..1"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<module xmlns="http://www.openapi.org/2014/" version="0.1">
+  <platform name="R"/>
+  <description><![CDATA[This module works with a CSV file with two columns.  The first column contains a categorical variable and the second column contains counts.  The module creates a barplot from those data in an SVG file called "barplot-csv.svg"]]></description>
+  <input name="filename" type="external"/>
+  <output name="barplot" type="external" ref="barplot-csv.svg"/>
+  <source ref="barplot-csv.R"><![CDATA[]]></source>
+  <source><![CDATA[barplotCSV(filename)]]></source>
+</module>

@@ -1,0 +1,13 @@
+<pipeline xmlns="http://www.openapi.org/2014/" version="0.1">
+  <component name="nonvoters" ref="nonvoters.xml" type="module"/>
+  <component name="tidy" ref="tidy.xml" type="module"/>
+  <component name="population" ref="population.xml" type="module"/>
+  <pipe>
+    <start component="nonvoters" output="nvfile"/>
+    <end component="tidy" input="nvfile"/>
+  </pipe>
+  <pipe>
+    <start component="population" output="popfile"/>
+    <end component="tidy" input="popfile"/>
+  </pipe>
+</pipeline>

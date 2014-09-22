@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<module xmlns="http://www.openapi.org/2014/" version="0.1">
+  <platform name="fileSystem"/>
+  <description><![CDATA[This module provides a CSV file called 'HEALTH_STAT_Data_8cb42e4a-b2e4-43b2-b249-822aa18822ff.csv', which contains data on maternal mortality over time in OECD countries. There are five columns of data, with the last three of most interest:  a country label, a year, and mortality (deaths per 1000 live births).  This file was downloaded from the OECD's Stat Extracts service.]]></description>
+  <output name="mortsrcfile" type="external" ref="data/HEALTH_STAT_Data_8cb42e4a-b2e4-43b2-b249-822aa18822ff.csv"/>
+</module>

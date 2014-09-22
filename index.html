@@ -129,9 +129,14 @@
 <div class="chunk" id="unnamed-chunk-5"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl std">birthrate_custom</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">loadPipeline</span><span class="hl std">(</span><span class="hl str">&quot;scripts/wikinz/birthrate-pipe-custom.xml&quot;</span><span class="hl std">,</span>
                                  <span class="hl str">&quot;birthrate_custom&quot;</span><span class="hl std">)</span>
 <span class="hl kwd">runPipeline</span><span class="hl std">(birthrate_custom)</span>
-<span class="hl kwd">list.files</span><span class="hl std">(</span><span class="hl str">&quot;pipelines/birthrate_custom&quot;</span><span class="hl std">)</span>
+<span class="hl kwd">list.files</span><span class="hl std">(</span><span class="hl str">&quot;pipelines/birthrate_custom&quot;</span><span class="hl std">,</span> <span class="hl kwc">recursive</span><span class="hl std">=</span><span class="hl num">TRUE</span><span class="hl std">)</span>
 </pre></div>
-<div class="output"><pre class="knitr r">## [1] "modules"
+<div class="output"><pre class="knitr r">## [1] "modules/birthrate/birthrate.csv"        
+## [2] "modules/birthrate/script.R"             
+## [3] "modules/brplot-R/birthrate-R.svg"       
+## [4] "modules/brplot-R-custom/birthrate-R.svg"
+## [5] "modules/brplot-R-custom/script.R"       
+## [6] "modules/brplot-R/script.R"
 </pre></div>
 <div class="source"><pre class="knitr r"><span class="hl kwd">gridsvg</span><span class="hl std">(</span><span class="hl str">&quot;birthrate-custom-pipe.svg&quot;</span><span class="hl std">,</span> <span class="hl kwc">width</span><span class="hl std">=</span><span class="hl num">4</span><span class="hl std">,</span> <span class="hl kwc">height</span><span class="hl std">=</span><span class="hl num">3</span><span class="hl std">)</span>
 <span class="hl kwd">grid.graph</span><span class="hl std">(</span><span class="hl kwd">agopenTrue</span><span class="hl std">(conduit:::</span><span class="hl kwd">graphPipeline</span><span class="hl std">(birthrate_custom),</span>
@@ -155,9 +160,14 @@
 <div class="chunk" id="unnamed-chunk-6"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl std">birthrate_python</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">loadPipeline</span><span class="hl std">(</span><span class="hl str">&quot;scripts/wikinz/birthrate-pipe-python.xml&quot;</span><span class="hl std">,</span>
                                  <span class="hl str">&quot;birthrate_python&quot;</span><span class="hl std">)</span>
 <span class="hl kwd">runPipeline</span><span class="hl std">(birthrate_python)</span>
-<span class="hl kwd">list.files</span><span class="hl std">(</span><span class="hl str">&quot;pipelines/birthrate_python&quot;</span><span class="hl std">)</span>
+<span class="hl kwd">list.files</span><span class="hl std">(</span><span class="hl str">&quot;pipelines/birthrate_python&quot;</span><span class="hl std">,</span> <span class="hl kwc">recursive</span><span class="hl std">=</span><span class="hl num">TRUE</span><span class="hl std">)</span>
 </pre></div>
-<div class="output"><pre class="knitr r">## [1] "modules"
+<div class="output"><pre class="knitr r">## [1] "modules/birthrate/birthrate.csv"   
+## [2] "modules/birthrate/script.R"        
+## [3] "modules/brplot-py/birthrate-py.svg"
+## [4] "modules/brplot-py/script.py"       
+## [5] "modules/brplot-R/birthrate-R.svg"  
+## [6] "modules/brplot-R/script.R"
 </pre></div>
 <div class="source"><pre class="knitr r"><span class="hl kwd">library</span><span class="hl std">(gridSVG)</span>
 <span class="hl kwd">gridsvg</span><span class="hl std">(</span><span class="hl str">&quot;birthrate-pipe-python.svg&quot;</span><span class="hl std">,</span> <span class="hl kwc">width</span><span class="hl std">=</span><span class="hl num">4</span><span class="hl std">,</span> <span class="hl kwc">height</span><span class="hl std">=</span><span class="hl num">3</span><span class="hl std">)</span>
@@ -200,9 +210,13 @@
 
 <div class="chunk" id="unnamed-chunk-8"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl std">piePipe</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">loadPipeline</span><span class="hl std">(</span><span class="hl str">&quot;scripts/internetparty/piePipe.xml&quot;</span><span class="hl std">)</span>
 <span class="hl kwd">runPipeline</span><span class="hl std">(piePipe)</span>
-<span class="hl kwd">list.files</span><span class="hl std">(</span><span class="hl str">&quot;pipelines/piePipe&quot;</span><span class="hl std">)</span>
+<span class="hl kwd">list.files</span><span class="hl std">(</span><span class="hl str">&quot;pipelines/piePipe&quot;</span><span class="hl std">,</span> <span class="hl kwc">recursive</span><span class="hl std">=</span><span class="hl num">TRUE</span><span class="hl std">)</span>
 </pre></div>
-<div class="output"><pre class="knitr r">## [1] "modules"
+<div class="output"><pre class="knitr r">## [1] "modules/pie/pie.svg"             "modules/pie/script.R"           
+## [3] "modules/plot/non-voters.svg"     "modules/plot/population.svg"    
+## [5] "modules/plot/script.R"           "modules/tidy/nonvoters.rds"     
+## [7] "modules/tidy/pop2013grouped.rds" "modules/tidy/pop2013.rds"       
+## [9] "modules/tidy/script.R"
 </pre></div>
 <div class="source"><pre class="knitr r"><span class="hl kwd">library</span><span class="hl std">(gridSVG)</span>
 <span class="hl kwd">gridsvg</span><span class="hl std">(</span><span class="hl str">&quot;piePipe.svg&quot;</span><span class="hl std">,</span> <span class="hl kwc">width</span><span class="hl std">=</span><span class="hl num">4</span><span class="hl std">,</span> <span class="hl kwc">height</span><span class="hl std">=</span><span class="hl num">4</span><span class="hl std">)</span>

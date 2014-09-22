@@ -1,0 +1,33 @@
+<pipeline xmlns="http://www.openapi.org/2014/">
+  <component name="birthsOECDsrc" ref="birthsOECDsrc.xml" type="module"/>
+  <component name="birthsOECDclean" ref="birthsOECDclean.xml" type="module"/>
+  <component name="birthsOECDyear" ref="birthsOECDyear.xml" type="module"/>
+  <component name="subset-csv" ref="subset-csv.xml" type="module"/>
+  <component name="birthsOECDindex" ref="birthsOECDindex.xml" type="module"/>
+  <component name="birthsOECDnames" ref="birthsOECDnames.xml" type="module"/>
+  <component name="barplot-csv" ref="barplot-csv.xml" type="module"/>
+  <pipe>
+    <start component="birthsOECDsrc" output="birthsOECDsrcfile"/>
+    <end component="birthsOECDclean" input="infile"/>
+  </pipe>
+  <pipe>
+    <start component="birthsOECDyear" output="birthsOECDyear"/>
+    <end component="birthsOECDclean" input="year"/>
+  </pipe>
+  <pipe>
+    <start component="birthsOECDclean" output="outfile"/>
+    <end component="subset-csv" input="filename"/>
+  </pipe>
+  <pipe>
+    <start component="birthsOECDindex" output="birthsOECDindex"/>
+    <end component="subset-csv" input="index"/>
+  </pipe>
+  <pipe>
+    <start component="birthsOECDnames" output="birthsOECDnames"/>
+    <end component="subset-csv" input="names"/>
+  </pipe>
+  <pipe>
+    <start component="subset-csv" output="subset"/>
+    <end component="barplot-csv" input="filename"/>
+  </pipe>
+</pipeline>

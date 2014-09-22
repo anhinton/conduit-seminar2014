@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<module xmlns="http://www.openapi.org/2014/" version="0.1">
+  <platform name="R"/>
+  <description><![CDATA[]]></description>
+  <input name="filename" type="external"/>
+  <input name="ensurePkg" type="internal"/>
+  <input name="ensurePkgGitHub" type="internal"/>
+  <output name="plot" type="external" ref="hts.html"/>
+  <source><![CDATA[ensurePkgGitHub("rCharts", "ramnathv")]]></source>
+  <source ref="src/ts-highcharts.R"><![CDATA[]]></source>
+</module>

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<module xmlns="http://www.openapi.org/2014/" version="0.1">
+  <platform name="R"/>
+  <description><![CDATA[This module takes a CSV file and produces a time series from the first two columns in the CSV file.  The first column is assumed to contain times or dates and the second column values a set of y-values.  The result is an SVG file called 'timeseries.svg'.]]></description>
+  <input name="filename" type="external"/>
+  <output name="svg" type="external" ref="timeseries.svg"/>
+  <source ref="src/timeseries.R"><![CDATA[]]></source>
+</module>

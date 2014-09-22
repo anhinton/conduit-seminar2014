@@ -1,0 +1,26 @@
+<pipeline xmlns="http://www.openapi.org/2014/">
+  <component name="sbsource" ref="sbsource.xml" type="module"/>
+  <component name="stillbirth" ref="stillbirth.xml" type="module"/>
+  <component name="subset-csv" ref="subset-csv.xml" type="module"/>
+  <component name="timeseries-csv" ref="timeseries-csv.xml" type="module"/>
+  <pipe>
+    <start component="sbsource" output="sbsrcfile"/>
+    <end component="stillbirth" input="srcfile"/>
+  </pipe>
+  <pipe>
+    <start component="stillbirth" output="sbfile"/>
+    <end component="subset-csv" input="filename"/>
+  </pipe>
+  <pipe>
+    <start component="stillbirth" output="index"/>
+    <end component="subset-csv" input="index"/>
+  </pipe>
+  <pipe>
+    <start component="stillbirth" output="names"/>
+    <end component="subset-csv" input="names"/>
+  </pipe>
+  <pipe>
+    <start component="subset-csv" output="subset"/>
+    <end component="timeseries-csv" input="filename"/>
+  </pipe>
+</pipeline>

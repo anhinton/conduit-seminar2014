@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="288px" height="216px" viewBox="0 0 288 216" version="1.1">
+  <metadata xmlns:gridsvg="http://www.stat.auckland.ac.nz/~paul/R/gridSVG/">
+    <gridsvg:generator name="gridSVG" version="1.4-0" time="2014-09-23 11:49:22"/>
+    <gridsvg:argument name="name" value="birthrate-custom-pipe.svg"/>
+    <gridsvg:argument name="exportCoords" value="none"/>
+    <gridsvg:argument name="exportMappings" value="none"/>
+    <gridsvg:argument name="exportJS" value="none"/>
+    <gridsvg:argument name="res" value="72"/>
+    <gridsvg:argument name="prefix" value=""/>
+    <gridsvg:argument name="addClasses" value="FALSE"/>
+    <gridsvg:argument name="indent" value="TRUE"/>
+    <gridsvg:argument name="htmlWrapper" value="FALSE"/>
+    <gridsvg:argument name="usePaths" value="vpPaths"/>
+    <gridsvg:argument name="uniqueNames" value="TRUE"/>
+    <gridsvg:separator name="id.sep" value="."/>
+    <gridsvg:separator name="gPath.sep" value="::"/>
+    <gridsvg:separator name="vpPath.sep" value="::"/>
+  </metadata>
+  <g transform="translate(0, 216) scale(1, -1)">
+    <g id="gridSVG" fill="none" stroke="rgb(0,0,0)" stroke-dasharray="none" stroke-width="0.75" font-size="12" font-family="Helvetica, Arial, FreeSans, Liberation Sans, Nimbus Sans L, sans-serif" opacity="1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-opacity="1" fill-opacity="0" font-weight="normal" font-style="normal">
+      <g id="graphSizeVP.1">
+        <g id="graphSizeVP::graphScaleVP.1">
+          <g id="edge-brsource~birthrate.1">
+            <g id="curve-brsource~birthrate-1.1">
+              <polyline id="curve-brsource~birthrate-1.1.1" points="128.06,160.8 128.06,158.61 128.06,156.3 128.06,153.85 128.06,151.26 128.06,148.6 128.06,145.93 128.06,143.33 128.06,140.85 128.06,138.51 128.06,136.3 128.06,135.9" stroke="rgb(0,0,0)" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill="none"/>
+            </g>
+            <g id="arrowhead-brsource~birthrate.1">
+              <defs>
+                <marker id="arrowhead-brsource~birthrate.1.1.markerStart" refX="-9.36" refY="-3.41" overflow="visible" markerUnits="userSpaceOnUse" markerWidth="9.36" markerHeight="6.81" orient="auto">
+                  <path d="M 0 0 L 9.36 3.41 L 0 6.81" stroke="rgb(0,0,0)" fill="none" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1" transform="rotate(180)"/>
+                </marker>
+                <marker id="arrowhead-brsource~birthrate.1.1.markerEnd" refX="9.36" refY="3.41" overflow="visible" markerUnits="userSpaceOnUse" markerWidth="9.36" markerHeight="6.81" orient="auto">
+                  <path d="M 0 0 L 9.36 3.41 L 0 6.81" stroke="rgb(0,0,0)" fill="none" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1"/>
+                </marker>
+              </defs>
+              <polyline id="arrowhead-brsource~birthrate.1.1" points="128.06,135.9 128.06,125.93" marker-end="url(#arrowhead-brsource~birthrate.1.1.markerEnd)" stroke="rgb(0,0,0)" fill="none" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1"/>
+            </g>
+          </g>
+          <g id="edge-birthrate~brplot-R.1">
+            <g id="curve-birthrate~brplot-R-1.1">
+              <polyline id="curve-birthrate~brplot-R-1.1.1" points="112.12,91.06 110.24,89.17 108.26,87.15 106.17,84.99 103.96,82.7 101.63,80.27 99.23,77.75 96.78,75.19 94.32,72.61 91.9,70.09 89.54,67.64 87.28,65.31 85.11,63.08 83.02,60.97 82.23,60.18" stroke="rgb(0,0,0)" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill="none"/>
+            </g>
+            <g id="arrowhead-birthrate~brplot-R.1">
+              <defs>
+                <marker id="arrowhead-birthrate~brplot-R.1.1.markerStart" refX="-9.36" refY="-3.41" overflow="visible" markerUnits="userSpaceOnUse" markerWidth="9.36" markerHeight="6.81" orient="auto">
+                  <path d="M 0 0 L 9.36 3.41 L 0 6.81" stroke="rgb(0,0,0)" fill="none" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1" transform="rotate(180)"/>
+                </marker>
+                <marker id="arrowhead-birthrate~brplot-R.1.1.markerEnd" refX="9.36" refY="3.41" overflow="visible" markerUnits="userSpaceOnUse" markerWidth="9.36" markerHeight="6.81" orient="auto">
+                  <path d="M 0 0 L 9.36 3.41 L 0 6.81" stroke="rgb(0,0,0)" fill="none" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1"/>
+                </marker>
+              </defs>
+              <polyline id="arrowhead-birthrate~brplot-R.1.1" points="82.23,60.18 75.26,53.21" marker-end="url(#arrowhead-birthrate~brplot-R.1.1.markerEnd)" stroke="rgb(0,0,0)" fill="none" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1"/>
+            </g>
+          </g>
+          <g id="edge-birthrate~brplot-R-custom.1">
+            <g id="curve-birthrate~brplot-R-custom-1.1">
+              <polyline id="curve-birthrate~brplot-R-custom-1.1.1" points="143,91.06 144.9,89.17 146.89,87.17 149.01,85.06 151.24,82.82 153.59,80.48 156.02,78.05 158.49,75.58 160.97,73.1 163.41,70.66 165.77,68.3 168.05,66.02 170.23,63.84 172.33,61.74 172.89,61.18" stroke="rgb(0,0,0)" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill="none"/>
+            </g>
+            <g id="arrowhead-birthrate~brplot-R-custom.1">
+              <defs>
+                <marker id="arrowhead-birthrate~brplot-R-custom.1.1.markerStart" refX="-9.36" refY="-3.41" overflow="visible" markerUnits="userSpaceOnUse" markerWidth="9.36" markerHeight="6.81" orient="auto">
+                  <path d="M 0 0 L 9.36 3.41 L 0 6.81" stroke="rgb(0,0,0)" fill="none" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1" transform="rotate(180)"/>
+                </marker>
+                <marker id="arrowhead-birthrate~brplot-R-custom.1.1.markerEnd" refX="9.36" refY="3.41" overflow="visible" markerUnits="userSpaceOnUse" markerWidth="9.36" markerHeight="6.81" orient="auto">
+                  <path d="M 0 0 L 9.36 3.41 L 0 6.81" stroke="rgb(0,0,0)" fill="none" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1"/>
+                </marker>
+              </defs>
+              <polyline id="arrowhead-birthrate~brplot-R-custom.1.1" points="172.89,61.18 179.87,53.21" marker-end="url(#arrowhead-birthrate~brplot-R-custom.1.1.markerEnd)" stroke="rgb(0,0,0)" fill="none" stroke-width="0.75" stroke-dasharray="none" stroke-opacity="1" fill-opacity="1"/>
+            </g>
+          </g>
+          <g id="brsource.1">
+            <g id="box-brsource.1">
+              <polygon id="box-brsource.1.1" points="171.9,179.73 171.81,180.86 171.55,181.98 171.12,183.09 170.52,184.19 169.75,185.27 168.82,186.33 167.72,187.37 166.47,188.37 165.07,189.34 163.52,190.27 161.84,191.16 160.01,192.01 158.07,192.8 156,193.55 153.83,194.24 151.55,194.87 149.18,195.45 146.72,195.96 144.2,196.4 141.61,196.79 138.96,197.1 136.27,197.35 133.55,197.52 130.81,197.63 128.06,197.66 125.31,197.63 122.57,197.52 119.85,197.35 117.16,197.1 114.51,196.79 111.92,196.4 109.4,195.96 106.94,195.45 104.57,194.87 102.29,194.24 100.12,193.55 98.05,192.8 96.1,192.01 94.28,191.16 92.6,190.27 91.05,189.34 89.65,188.37 88.4,187.37 87.3,186.33 86.37,185.27 85.6,184.19 85,183.09 84.57,181.98 84.31,180.86 84.22,179.73 84.31,178.61 84.57,177.48 85,176.37 85.6,175.27 86.37,174.19 87.3,173.13 88.4,172.1 89.65,171.09 91.05,170.12 92.6,169.19 94.28,168.3 96.1,167.46 98.05,166.66 100.12,165.91 102.29,165.22 104.57,164.59 106.94,164.02 109.4,163.5 111.92,163.06 114.51,162.68 117.16,162.36 119.85,162.12 122.57,161.94 125.31,161.83 128.06,161.8 130.81,161.83 133.55,161.94 136.27,162.12 138.96,162.36 141.61,162.68 144.2,163.06 146.72,163.5 149.18,164.02 151.55,164.59 153.83,165.22 156,165.91 158.07,166.66 160.01,167.46 161.84,168.3 163.52,169.19 165.07,170.12 166.47,171.09 167.72,172.1 168.82,173.13 169.75,174.19 170.52,175.27 171.12,176.37 171.55,177.48 171.81,178.61 171.9,179.73" stroke="rgb(0,0,0)" fill="none" stroke-opacity="1" fill-opacity="0"/>
+            </g>
+            <g id="label-brsource.1">
+              <g id="label-brsource.1.1" transform="translate(128.06, 179.73)" stroke-width="0.1">
+                <g id="label-brsource.1.1.scale" transform="scale(1, -1)">
+                  <text x="0" y="0" id="label-brsource.1.1.text" text-anchor="middle" stroke="rgb(0,0,0)" font-size="14" fill="rgb(0,0,0)" stroke-opacity="1" fill-opacity="1">
+                    <tspan id="label-brsource.1.1.tspan.1" dy="5.03" x="0">brsource</tspan>
+                  </text>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g id="birthrate.1">
+            <g id="box-birthrate.1">
+              <polygon id="box-birthrate.1.1" points="170.9,108 170.81,109.13 170.56,110.25 170.14,111.36 169.55,112.46 168.8,113.54 167.89,114.6 166.82,115.64 165.6,116.64 164.23,117.61 162.72,118.54 161.07,119.43 159.29,120.28 157.39,121.07 155.37,121.82 153.24,122.51 151.01,123.14 148.7,123.71 146.3,124.23 143.83,124.67 141.3,125.06 138.71,125.37 136.09,125.62 133.43,125.79 130.75,125.9 128.06,125.93 125.37,125.9 122.69,125.79 120.03,125.62 117.41,125.37 114.82,125.06 112.29,124.67 109.82,124.23 107.42,123.71 105.11,123.14 102.88,122.51 100.75,121.82 98.73,121.07 96.83,120.28 95.05,119.43 93.4,118.54 91.89,117.61 90.52,116.64 89.3,115.64 88.23,114.6 87.32,113.54 86.57,112.46 85.98,111.36 85.56,110.25 85.3,109.13 85.22,108 85.3,106.87 85.56,105.75 85.98,104.64 86.57,103.54 87.32,102.46 88.23,101.4 89.3,100.36 90.52,99.36 91.89,98.39 93.4,97.46 95.05,96.57 96.83,95.72 98.73,94.93 100.75,94.18 102.88,93.49 105.11,92.86 107.42,92.29 109.82,91.77 112.29,91.33 114.82,90.94 117.41,90.63 120.03,90.38 122.69,90.21 125.37,90.1 128.06,90.07 130.75,90.1 133.43,90.21 136.09,90.38 138.71,90.63 141.3,90.94 143.83,91.33 146.3,91.77 148.7,92.29 151.01,92.86 153.24,93.49 155.37,94.18 157.39,94.93 159.29,95.72 161.07,96.57 162.72,97.46 164.23,98.39 165.6,99.36 166.82,100.36 167.89,101.4 168.8,102.46 169.55,103.54 170.14,104.64 170.56,105.75 170.81,106.87 170.9,108" stroke="rgb(0,0,0)" fill="none" stroke-opacity="1" fill-opacity="0"/>
+            </g>
+            <g id="label-birthrate.1">
+              <g id="label-birthrate.1.1" transform="translate(128.06, 108)" stroke-width="0.1">
+                <g id="label-birthrate.1.1.scale" transform="scale(1, -1)">
+                  <text x="0" y="0" id="label-birthrate.1.1.text" text-anchor="middle" stroke="rgb(0,0,0)" font-size="14" fill="rgb(0,0,0)" stroke-opacity="1" fill-opacity="1">
+                    <tspan id="label-birthrate.1.1.tspan.1" dy="5.03" x="0">birthrate</tspan>
+                  </text>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g id="brplot-R.1">
+            <g id="box-brplot-R.1">
+              <polygon id="box-brplot-R.1.1" points="103.15,36.27 103.07,37.39 102.82,38.52 102.39,39.63 101.81,40.73 101.06,41.81 100.14,42.87 99.08,43.9 97.85,44.91 96.48,45.88 94.97,46.81 93.32,47.7 91.54,48.54 89.64,49.34 87.62,50.09 85.49,50.78 83.27,51.41 80.95,51.98 78.55,52.5 76.08,52.94 73.55,53.32 70.97,53.64 68.34,53.88 65.68,54.06 63,54.17 60.31,54.2 57.62,54.17 54.94,54.06 52.29,53.88 49.66,53.64 47.08,53.32 44.54,52.94 42.07,52.5 39.68,51.98 37.36,51.41 35.13,50.78 33.01,50.09 30.99,49.34 29.09,48.54 27.31,47.7 25.66,46.81 24.14,45.88 22.77,44.91 21.55,43.9 20.48,42.87 19.57,41.81 18.82,40.73 18.23,39.63 17.81,38.52 17.56,37.39 17.47,36.27 17.56,35.14 17.81,34.02 18.23,32.91 18.82,31.81 19.57,30.73 20.48,29.67 21.55,28.63 22.77,27.63 24.14,26.66 25.66,25.73 27.31,24.84 29.09,23.99 30.99,23.2 33.01,22.45 35.13,21.76 37.36,21.13 39.68,20.55 42.07,20.04 44.54,19.6 47.08,19.21 49.66,18.9 52.29,18.65 54.94,18.48 57.62,18.37 60.31,18.34 63,18.37 65.68,18.48 68.34,18.65 70.97,18.9 73.55,19.21 76.08,19.6 78.55,20.04 80.95,20.55 83.27,21.13 85.49,21.76 87.62,22.45 89.64,23.2 91.54,23.99 93.32,24.84 94.97,25.73 96.48,26.66 97.85,27.63 99.08,28.63 100.14,29.67 101.06,30.73 101.81,31.81 102.39,32.91 102.82,34.02 103.07,35.14 103.15,36.27" stroke="rgb(0,0,0)" fill="none" stroke-opacity="1" fill-opacity="0"/>
+            </g>
+            <g id="label-brplot-R.1">
+              <g id="label-brplot-R.1.1" transform="translate(60.31, 36.27)" stroke-width="0.1">
+                <g id="label-brplot-R.1.1.scale" transform="scale(1, -1)">
+                  <text x="0" y="0" id="label-brplot-R.1.1.text" text-anchor="middle" stroke="rgb(0,0,0)" font-size="14" fill="rgb(0,0,0)" stroke-opacity="1" fill-opacity="1">
+                    <tspan id="label-brplot-R.1.1.tspan.1" dy="5.03" x="0">brplot-R</tspan>
+                  </text>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g id="brplot-R-custom.1">
+            <g id="box-brplot-R-custom.1">
+              <polygon id="box-brplot-R-custom.1.1" points="270.53,36.27 270.38,37.39 269.94,38.52 269.22,39.63 268.21,40.73 266.92,41.81 265.35,42.87 263.51,43.9 261.41,44.91 259.05,45.88 256.45,46.81 253.61,47.7 250.54,48.54 247.27,49.34 243.8,50.09 240.14,50.78 236.31,51.41 232.32,51.98 228.19,52.5 223.94,52.94 219.58,53.32 215.14,53.64 210.62,53.88 206.04,54.06 201.43,54.17 196.8,54.2 192.17,54.17 187.56,54.06 182.99,53.88 178.47,53.64 174.02,53.32 169.66,52.94 165.41,52.5 161.29,51.98 157.3,51.41 153.47,50.78 149.81,50.09 146.33,49.34 143.06,48.54 140,47.7 137.16,46.81 134.56,45.88 132.2,44.91 130.09,43.9 128.26,42.87 126.69,41.81 125.39,40.73 124.38,39.63 123.66,38.52 123.22,37.39 123.08,36.27 123.22,35.14 123.66,34.02 124.38,32.91 125.39,31.81 126.69,30.73 128.26,29.67 130.09,28.63 132.2,27.63 134.56,26.66 137.16,25.73 140,24.84 143.06,23.99 146.33,23.2 149.81,22.45 153.47,21.76 157.3,21.13 161.29,20.55 165.41,20.04 169.66,19.6 174.02,19.21 178.47,18.9 182.99,18.65 187.56,18.48 192.17,18.37 196.8,18.34 201.43,18.37 206.04,18.48 210.62,18.65 215.14,18.9 219.58,19.21 223.94,19.6 228.19,20.04 232.32,20.55 236.31,21.13 240.14,21.76 243.8,22.45 247.27,23.2 250.54,23.99 253.61,24.84 256.45,25.73 259.05,26.66 261.41,27.63 263.51,28.63 265.35,29.67 266.92,30.73 268.21,31.81 269.22,32.91 269.94,34.02 270.38,35.14 270.53,36.27" stroke="rgb(0,0,0)" fill="rgb(0,255,0)" stroke-opacity="1" fill-opacity="1"/>
+            </g>
+            <g id="label-brplot-R-custom.1">
+              <g id="label-brplot-R-custom.1.1" transform="translate(196.8, 36.27)" stroke-width="0.1">
+                <g id="label-brplot-R-custom.1.1.scale" transform="scale(1, -1)">
+                  <text x="0" y="0" id="label-brplot-R-custom.1.1.text" text-anchor="middle" stroke="rgb(0,0,0)" font-size="13.78" fill="rgb(0,0,0)" stroke-opacity="1" fill-opacity="1">
+                    <tspan id="label-brplot-R-custom.1.1.tspan.1" dy="5.03" x="0">brplot-R-custom</tspan>
+                  </text>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

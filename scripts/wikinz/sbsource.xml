@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<module xmlns="http://www.openapi.org/2014/" version="0.1">
+  <platform name="fileSystem"/>
+  <description><![CDATA[This module provides a CSV file called 'VSB357005_20140611_121828_65.csv', which contains data on still births in New Zealand. There are two columns of data:  one for year and one for the number of still births.  This file was downloaded from Statistics New Zealand's InfoShare service and contains lines of meta data at both the start and end of the file, so cannot be read directly by statistical software.]]></description>
+  <output name="sbsrcfile" type="external" ref="data/VSB357005_20140611_121828_65.csv"/>
+</module>

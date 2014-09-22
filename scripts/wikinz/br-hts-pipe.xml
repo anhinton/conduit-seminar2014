@@ -1,0 +1,37 @@
+<pipeline xmlns="http://www.openapi.org/2014/">
+  <component name="ensurePkg" 
+	     ref="https://gist.githubusercontent.com/pmur002/8368ac4788d1876cc00b/raw/08d34a385b2ce8b3a2412888eae64762802d3a3c/ensurePkg.xml"
+	     type="module"/>
+  <component name="brsrc" ref="brsrc.xml" type="module"/>
+  <component name="br" ref="br.xml" type="module"/>
+  <component name="subset-csv" ref="subset-csv.xml" type="module"/>
+  <component name="hts" ref="hts.xml" type="module"/>
+  <pipe>
+    <start component="brsrc" output="brsrcfile"/>
+    <end component="br" input="srcfile"/>
+  </pipe>
+  <pipe>
+    <start component="br" output="brfile"/>
+    <end component="subset-csv" input="filename"/>
+  </pipe>
+  <pipe>
+    <start component="br" output="index"/>
+    <end component="subset-csv" input="index"/>
+  </pipe>
+  <pipe>
+    <start component="br" output="names"/>
+    <end component="subset-csv" input="names"/>
+  </pipe>
+  <pipe>
+    <start component="subset-csv" output="subset"/>
+    <end component="hts" input="filename"/>
+  </pipe>
+  <pipe>
+    <start component="ensurePkg" output="ensurePkg"/>
+    <end component="hts" input="ensurePkg"/>
+  </pipe>
+  <pipe>
+    <start component="ensurePkg" output="ensurePkgGitHub"/>
+    <end component="hts" input="ensurePkgGitHub"/>
+  </pipe>
+</pipeline>
