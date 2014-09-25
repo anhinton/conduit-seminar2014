@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title>OpenAPI Seminar 2014 conduit example</title>
+    <title>Examples from 'The openapi Project' in conduit</title>
     <meta name="description" content="Pipeline and module scripts from Paul
 				      Murrell's 2014 OpenAPI seminar adapted
 				      to run in conduit">
@@ -14,9 +14,48 @@
   </head>
 
   <body>
+    
+    <h1>Examples from 'The openapi project' in conduit</h1>
+
+    <p>By Paul Murrell and Ashley Noel Hinton</p>
+
+    <p>Paul Murrell's talk <a href="https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/">The openapi Project</a> introduced the goals and ideas of 
+      openapi, and demonstrated some pipeline examples in a 
+      prototype glue system <a href="https://github.com/pmur002/oaglue">
+	oaglue</a>. This page details the same pipeline examples being run
+      in another prototype glue system, <a href="https://github.com/anhinton/conduit">conduit</a>.</p>
+
+    <p>As 'oaglue' and 'conduit' are both under active development,
+      the pipeline XML scripts from the talk needed to be modified to run in
+      'conduit'. A comparison of the pipeline XML file for the first example
+      follows.</p>
+
+    <p><a href="https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/XML/birthrate-pipe.xml">Original pipeline XML file</a>:</p>
+
+<!--begin.rcode echo=FALSE
+escHTML <- function(x) {
+    gsub("<", "&lt;", 
+         gsub(">", "&gt;", 
+              gsub("&", "&amp;", x)))
+}
+cat(escHTML(getURL("https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/XML/birthrate-pipe.xml")))
+end.rcode-->
+
+    <p><a href="scripts/wikinz/birthrate-pipe.xml">Modified pipeline XML
+	file</a>:</p>
+
+<!--begin.rcode echo=FALSE
+cat(escHTML(readLines("scripts/wikinz/birthrate-pipe.xml")), sep="\n")
+end.rcode-->
+
+    <p>The differences between the two documents mostly relate to the naming
+      of XML nodes and attributes, but otherwise leave the basic structure of
+      a list of components and a list of pipes connecting components unchanged.
+    </p>
 
     <p>
-      As conduit is still under active development, I have provided a tarball of
+      As 'conduit' is still under active development, I have provided a
+      tarball of
       <a href="conduit_0.1-0-2014-09-19.tar.gz">the package</a> as it was when 
       this page was created.
     </p>  
