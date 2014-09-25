@@ -1,3 +1,0 @@
-
-df <- read.csv(filename)
-df[, c(x, y)]

@@ -1,6 +1,0 @@
-
-births <- read.csv(brfile, col.names=c("year", "births"))
-
-svg("birthrate.svg")
-plot(births, type="l")
-dev.off()
