@@ -1,0 +1,219 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Examples from 'The openapi Project' in conduit</title>
+    <meta name="description" content="Pipeline and module scripts from Paul
+				      Murrell's 2014 OpenAPI seminar adapted
+				      to run in conduit">
+    <meta name="author" content="SitePoint">
+
+    <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
+  </head>
+
+  <body>
+    
+    <h1>Examples from 'The openapi project' in conduit</h1>
+
+    <p>By Paul Murrell and Ashley Noel Hinton</p>
+
+    <p>Paul Murrell's talk <a href="https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/">The openapi Project</a> introduced the goals and ideas of 
+      openapi, and demonstrated some pipeline examples in a 
+      prototype glue system <a href="https://github.com/pmur002/oaglue">
+	oaglue</a>. This page details the same pipeline examples being run
+      in another prototype glue system, <a href="https://github.com/anhinton/conduit">conduit</a>.</p>
+
+    <p>As 'oaglue' and 'conduit' are both under active development,
+      the pipeline XML scripts from the talk needed to be modified to run in
+      'conduit'. A comparison of the pipeline XML file for the first example
+      follows.</p>
+
+    <p><a href="https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/XML/birthrate-pipe.xml">Original pipeline XML file</a>:</p>
+
+<!--begin.rcode echo=FALSE
+escHTML <- function(x) {
+    gsub("<", "&lt;", 
+         gsub(">", "&gt;", 
+              gsub("&", "&amp;", x)))
+}
+cat(escHTML(getURL("https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/XML/birthrate-pipe.xml")))
+end.rcode-->
+
+    <p><a href="scripts/wikinz/birthrate-pipe.xml">Modified pipeline XML
+	file</a>:</p>
+
+<!--begin.rcode echo=FALSE
+cat(escHTML(readLines("scripts/wikinz/birthrate-pipe.xml")), sep="\n")
+end.rcode-->
+
+    <p>The differences between the two documents mostly relate to the naming
+      of XML nodes and attributes. The basic structure of
+      a list of components and a list of pipes connecting components is
+      visible in both versions.
+    </p>
+
+    <p>The module and pipeline XML files are found in the <a href="scripts">
+	scripts sub-directory</a>, with a further subdirectory for the
+      <a href="scripts/wikinz">Wiki NZ</a> example and the
+      <a href="scripts/internetparty">Internet Party</a> example.
+      Data and source files for each example are found in the respective
+      sub-directories.</p>
+									 
+
+    <p>
+      As 'conduit' is still under active development, I have provided a
+      tarball of
+      <a href="conduit_0.1-0-2014-09-19.tar.gz">the package</a> as it was when 
+      this page was created.
+    </p>  
+
+<!--begin.rcode
+install.packages("conduit_0.1-0-2014-09-19.tar.gz")
+end.rcode-->
+ 
+<!--begin.rcode
+library(conduit)
+end.rcode-->
+    
+    <p>
+      <a href="https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/openapi.html#14.0">openapi is a Glue System</a>
+    </p>
+
+<!--begin.rcode 
+birthrate <- loadPipeline("scripts/wikinz/birthrate-pipe.xml", 
+	                          "birthrate")
+runPipeline(birthrate)
+list.files("pipelines/birthrate/modules", recursive=TRUE)
+end.rcode-->
+
+    <p><a href="https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/openapi.html#15.0">openapi is...</a></p>
+
+<!--begin.rcode
+library(gridGraphviz)
+library(gridSVG)
+gridsvg("birthrate-pipe.svg", width=4, height=3)
+grid.graph(agopenTrue(conduit:::graphPipeline(birthrate), "birthrate", 
+                      attrs=list(node=list(shape="ellipse"))))
+dev.off()
+end.rcode-->   
+
+    <p class="fig">
+      <img src="birthrate-pipe.svg">
+    </p> 
+
+    <p><a href="https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/openapi.html#21.0">Another openapi example</a></p>
+
+<!--begin.rcode
+birthrate_custom <- loadPipeline("scripts/wikinz/birthrate-pipe-custom.xml",
+                                 "birthrate_custom")
+runPipeline(birthrate_custom)
+list.files("pipelines/birthrate_custom", recursive=TRUE)
+gridsvg("birthrate-custom-pipe.svg", width=4, height=3)
+grid.graph(agopenTrue(conduit:::graphPipeline(birthrate_custom), 
+                      "birthrate_custom", 
+                      attrs=list(node=list(shape="ellipse"))))
+grid.edit("box-brplot-R-custom", gp=gpar(fill="green"))
+dev.off()
+end.rcode--> 
+
+    <p class="fig">
+      <img src="birthrate-custom-pipe.svg">
+    </p> 
+
+    <p class="fig">
+      <img src="pipelines/birthrate_custom/modules/brplot-R-custom/birthrate-R.svg">
+    </p>
+
+    <p><a href="https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/openapi.html#20.0">An openapi example</a></p>
+
+<!--begin.rcode
+birthrate_python <- loadPipeline("scripts/wikinz/birthrate-pipe-python.xml",
+                                 "birthrate_python")
+runPipeline(birthrate_python)
+list.files("pipelines/birthrate_python", recursive=TRUE)
+library(gridSVG)
+gridsvg("birthrate-pipe-python.svg", width=4, height=3)
+grid.graph(agopenTrue(conduit:::graphPipeline(birthrate_python), 
+                      "birthrate_python", 
+                      attrs=list(node=list(shape="ellipse"))))
+grid.edit("box-brplot-py", gp=gpar(fill="green"))
+dev.off()
+end.rcode-->
+
+    <p class="fig">
+      <img src="birthrate-pipe-python.svg">
+    </p>
+
+    <p class="fig">
+      <img src="pipelines/birthrate_python/modules/brplot-py/birthrate-py.svg">
+    </p>
+
+    <p><a href="https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/openapi.html#33.0">Yet another openapi example</a></p>
+
+<!--begin.rcode
+plotPipe <- loadPipeline("scripts/internetparty/plotPipe.xml", "plotPipe")
+library(gridSVG)
+gridsvg("plotPipe.svg", width=4, height=4)
+grid.graph(agopenTrue(conduit:::graphPipeline(plotPipe), 
+                      "plotPipe", 
+                      attrs=list(node=list(shape="ellipse"))))
+dev.off()
+end.rcode-->
+
+    <p style="fig">
+      <img src="plotPipe.svg">
+    </p>
+
+    <p><a href="https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/openapi.html#36.0">Yet another openapi example</a></p>
+
+<!--begin.rcode
+piePipe <- loadPipeline("scripts/internetparty/piePipe.xml")
+runPipeline(piePipe)
+list.files("pipelines/piePipe", recursive=TRUE)
+library(gridSVG)
+gridsvg("piePipe.svg", width=4, height=4)
+grid.graph(agopenTrue(conduit:::graphPipeline(piePipe), 
+                      "piePipe", 
+                      attrs=list(node=list(shape="ellipse"))))
+grid.edit("box-pie", gp=gpar(fill="green"))
+dev.off()
+end.rcode-->
+
+    <p style="fig">
+      <img src="piePipe.svg">
+    </p>
+
+    <p class="fig">
+      <object width="350px" height="350px"
+              data="pipelines/piePipe/modules/pie/pie.svg" 
+              type="image/svg+xml"> </object>
+    </p>
+
+<!--begin.rcode
+reportPipe <- loadPipeline("scripts/internetparty/reportPipe.xml", "reportPipe")
+runPipeline(reportPipe)
+list.files("pipelines/reportPipe", recursive=TRUE)
+end.rcode-->
+
+    <iframe width="500px" height="700px" seamless
+            src="pipelines/reportPipe/modules/report/report.html"></iframe>
+
+<!--begin.rcode
+library(gridSVG)
+gridsvg("reportPipe.svg", width=4, height=4)
+grid.graph(agopenTrue(conduit:::graphPipeline(reportPipe), 
+                      "reportPipe", 
+                      attrs=list(node=list(shape="ellipse"))))
+dev.off()
+end.rcode-->
+
+  <p style="fig">
+    <img src="reportPipe.svg">
+  </p>
+
+
+
+  </body>
+</html>
