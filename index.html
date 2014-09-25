@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 
 <html lang="en">
   <head>
@@ -64,7 +64,7 @@
   font-weight: bold;
 }
 </style>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
 
     <title>Examples from 'The openapi Project' in conduit</title>
     <meta name="description" content="Pipeline and module scripts from Paul
@@ -72,20 +72,31 @@
 				      to run in conduit">
     <meta name="author" content="SitePoint">
 
+    <style type="text/css">
+      div.main {
+        margin: auto;
+        width: 800px;
+      }
+    </style>
+
     <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
   </head>
 
   <body>
+
+    <div class="main">
     
     <h1>Examples from 'The openapi project' in conduit</h1>
 
     <p>By Paul Murrell and Ashley Noel Hinton</p>
 
-    <p>Paul Murrell's talk <a href="https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/">The openapi Project</a> introduced the goals and ideas of 
-      openapi, and demonstrated some pipeline examples in a version of a
+    <p>25 September 2014</p>
+
+    <p>Paul Murrell's talk, <a href="https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/">The openapi Project</a>, introduced the goals and ideas of 
+      openapi, and demonstrated some pipeline examples in a 
       prototype glue system <a href="https://github.com/pmur002/oaglue">
 	oaglue</a>. This page details the same pipeline examples being run
-      in another prototype glue system, <a href="https://github.com/anhinton/conduit">conduit</a>.</p>
+      in another prototype glue system, <a href="https://github.com/anhinton/conduit">conduit</a>. Both prototypes are R packages.</p>
 
     <p>As 'oaglue' and 'conduit' are both under active development,
       the pipeline XML scripts from the talk needed to be modified to run in
@@ -130,34 +141,43 @@
 </div></div>
 
     <p>The differences between the two documents mostly relate to the naming
-      of XML nodes and attributes, but otherwise leave the basic structure of
-      a list of components and a list of pipes connecting components unchanged.
+      of XML nodes and attributes. The basic structure of
+      a list of components and a list of pipes connecting components is
+      visible in both versions.
     </p>
 
-    <p>
-      As 'conduit' is still under active development, I have provided a
-      tarball of
-      <a href="conduit_0.1-0-2014-09-19.tar.gz">the package</a> as it was when 
-      this page was created.
-    </p>  
+    <p>The module and pipeline XML files are found in the <a href="scripts">
+	scripts sub-directory</a>, with a further subdirectory for the
+      <a href="scripts/wikinz">Wiki NZ</a> example and the
+      <a href="scripts/internetparty">Internet Party</a> example.
+      Data and source files for each example are found in the respective
+      sub-directories.</p>
 
-<div class="chunk" id="unnamed-chunk-3"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl kwd">install.packages</span><span class="hl std">(</span><span class="hl str">&quot;conduit_0.1-0-2014-09-19.tar.gz&quot;</span><span class="hl std">)</span>
-</pre></div>
-<div class="message"><pre class="knitr r">## Installing package into '/home/ahin017/R/x86_64-pc-linux-gnu-library/3.1'
-## (as 'lib' is unspecified)
-## inferring 'repos = NULL' from 'pkgs'
-</pre></div>
-</div></div>
- 
-<div class="chunk" id="unnamed-chunk-4"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl kwd">library</span><span class="hl std">(conduit)</span>
-</pre></div>
-</div></div>
+    <p>The results of running the pipelines can be found in the
+      <a href="pipelines">pipelines sub-directory</a>. These pipelines were
+	run on Ubuntu 14.04 64-bit machine, using R 3.1.1. Modules requiring
+	the Python platform were run in Python 2.7 with the NumPy package
+	and matplotlib library available.</p>
     
     <p>
-      <a href="https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/openapi.html#14.0">openapi is a Glue System</a>
-    </p>
+      A tarball of
+      <a href="conduit_0.1-0-2014-09-19.tar.gz">the conduit package</a> as it
+      was when this page was created is provided. Several other R packages
+      are required, a list of which <a href="#sessionInfo">follows the
+	examples</a>.</p>  
+    
+    <p>Each example title is a link to the example in the original talk
+      slides.</p>
 
-<div class="chunk" id="unnamed-chunk-5"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl std">birthrate</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">loadPipeline</span><span class="hl std">(</span><span class="hl str">&quot;scripts/wikinz/birthrate-pipe.xml&quot;</span><span class="hl std">,</span>
+    <h2>Examples</h2>
+
+
+    
+    <h3>
+      <a href="https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/openapi.html#14.0">openapi is a Glue System</a>
+    </h3>
+
+<div class="chunk" id="unnamed-chunk-4"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl std">birthrate</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">loadPipeline</span><span class="hl std">(</span><span class="hl str">&quot;scripts/wikinz/birthrate-pipe.xml&quot;</span><span class="hl std">,</span>
                                   <span class="hl str">&quot;birthrate&quot;</span><span class="hl std">)</span>
 <span class="hl kwd">runPipeline</span><span class="hl std">(birthrate)</span>
 <span class="hl kwd">list.files</span><span class="hl std">(</span><span class="hl str">&quot;pipelines/birthrate/modules&quot;</span><span class="hl std">,</span> <span class="hl kwc">recursive</span><span class="hl std">=</span><span class="hl num">TRUE</span><span class="hl std">)</span>
@@ -167,9 +187,9 @@
 </pre></div>
 </div></div>
 
-    <p><a href="https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/openapi.html#15.0">openapi is...</a></p>
+    <h3><a href="https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/openapi.html#15.0">openapi is...</a></h3>
 
-<div class="chunk" id="unnamed-chunk-6"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl kwd">library</span><span class="hl std">(gridGraphviz)</span>
+<div class="chunk" id="unnamed-chunk-5"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl kwd">library</span><span class="hl std">(gridGraphviz)</span>
 <span class="hl kwd">library</span><span class="hl std">(gridSVG)</span>
 <span class="hl kwd">gridsvg</span><span class="hl std">(</span><span class="hl str">&quot;birthrate-pipe.svg&quot;</span><span class="hl std">,</span> <span class="hl kwc">width</span><span class="hl std">=</span><span class="hl num">4</span><span class="hl std">,</span> <span class="hl kwc">height</span><span class="hl std">=</span><span class="hl num">3</span><span class="hl std">)</span>
 <span class="hl kwd">grid.graph</span><span class="hl std">(</span><span class="hl kwd">agopenTrue</span><span class="hl std">(conduit:::</span><span class="hl kwd">graphPipeline</span><span class="hl std">(birthrate),</span> <span class="hl str">&quot;birthrate&quot;</span><span class="hl std">,</span>
@@ -179,12 +199,12 @@
 </div></div>
 
     <p class="fig">
-      <img src="birthrate-pipe.svg">
+      <img src="birthrate-pipe.svg" alt="Graph of birthrate pipeline">
     </p> 
 
-    <p><a href="https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/openapi.html#21.0">Another openapi example</a></p>
+    <h3><a href="https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/openapi.html#16.0">An openapi example</a></h3>
 
-<div class="chunk" id="unnamed-chunk-7"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl std">birthrate_custom</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">loadPipeline</span><span class="hl std">(</span><span class="hl str">&quot;scripts/wikinz/birthrate-pipe-custom.xml&quot;</span><span class="hl std">,</span>
+<div class="chunk" id="unnamed-chunk-6"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl std">birthrate_custom</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">loadPipeline</span><span class="hl std">(</span><span class="hl str">&quot;scripts/wikinz/birthrate-pipe-custom.xml&quot;</span><span class="hl std">,</span>
                                  <span class="hl str">&quot;birthrate_custom&quot;</span><span class="hl std">)</span>
 <span class="hl kwd">runPipeline</span><span class="hl std">(birthrate_custom)</span>
 <span class="hl kwd">list.files</span><span class="hl std">(</span><span class="hl str">&quot;pipelines/birthrate_custom&quot;</span><span class="hl std">,</span> <span class="hl kwc">recursive</span><span class="hl std">=</span><span class="hl num">TRUE</span><span class="hl std">)</span>
@@ -206,16 +226,18 @@
 </div></div>
 
     <p class="fig">
-      <img src="birthrate-custom-pipe.svg">
+      <img src="birthrate-custom-pipe.svg" alt="Graph of customised birthrate
+						pipeline">
     </p> 
 
     <p class="fig">
-      <img src="pipelines/birthrate_custom/modules/brplot-R-custom/birthrate-R.svg">
+      <img src="pipelines/birthrate_custom/modules/brplot-R-custom/birthrate-R.svg"
+	   alt="Birthrate plot generated by pipeline">
     </p>
 
-    <p><a href="https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/openapi.html#20.0">An openapi example</a></p>
+    <h3><a href="https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/openapi.html#20.0">Another openapi example</a></h3>
 
-<div class="chunk" id="unnamed-chunk-8"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl std">birthrate_python</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">loadPipeline</span><span class="hl std">(</span><span class="hl str">&quot;scripts/wikinz/birthrate-pipe-python.xml&quot;</span><span class="hl std">,</span>
+<div class="chunk" id="unnamed-chunk-7"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl std">birthrate_python</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">loadPipeline</span><span class="hl std">(</span><span class="hl str">&quot;scripts/wikinz/birthrate-pipe-python.xml&quot;</span><span class="hl std">,</span>
                                  <span class="hl str">&quot;birthrate_python&quot;</span><span class="hl std">)</span>
 <span class="hl kwd">runPipeline</span><span class="hl std">(birthrate_python)</span>
 <span class="hl kwd">list.files</span><span class="hl std">(</span><span class="hl str">&quot;pipelines/birthrate_python&quot;</span><span class="hl std">,</span> <span class="hl kwc">recursive</span><span class="hl std">=</span><span class="hl num">TRUE</span><span class="hl std">)</span>
@@ -238,16 +260,18 @@
 </div></div>
 
     <p class="fig">
-      <img src="birthrate-pipe-python.svg">
+      <img src="birthrate-pipe-python.svg" alt="Plot of python birthrate
+						pipeline">
     </p>
 
     <p class="fig">
-      <img src="pipelines/birthrate_python/modules/brplot-py/birthrate-py.svg">
+      <img src="pipelines/birthrate_python/modules/brplot-py/birthrate-py.svg"
+	   alt="Birthrate plot from python birthrate pipeline">
     </p>
 
     <p><a href="https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/openapi.html#33.0">Yet another openapi example</a></p>
 
-<div class="chunk" id="unnamed-chunk-9"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl std">plotPipe</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">loadPipeline</span><span class="hl std">(</span><span class="hl str">&quot;scripts/internetparty/plotPipe.xml&quot;</span><span class="hl std">,</span> <span class="hl str">&quot;plotPipe&quot;</span><span class="hl std">)</span>
+<div class="chunk" id="unnamed-chunk-8"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl std">plotPipe</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">loadPipeline</span><span class="hl std">(</span><span class="hl str">&quot;scripts/internetparty/plotPipe.xml&quot;</span><span class="hl std">,</span> <span class="hl str">&quot;plotPipe&quot;</span><span class="hl std">)</span>
 <span class="hl kwd">library</span><span class="hl std">(gridSVG)</span>
 <span class="hl kwd">gridsvg</span><span class="hl std">(</span><span class="hl str">&quot;plotPipe.svg&quot;</span><span class="hl std">,</span> <span class="hl kwc">width</span><span class="hl std">=</span><span class="hl num">4</span><span class="hl std">,</span> <span class="hl kwc">height</span><span class="hl std">=</span><span class="hl num">4</span><span class="hl std">)</span>
 <span class="hl kwd">grid.graph</span><span class="hl std">(</span><span class="hl kwd">agopenTrue</span><span class="hl std">(conduit:::</span><span class="hl kwd">graphPipeline</span><span class="hl std">(plotPipe),</span>
@@ -261,12 +285,12 @@
 </div></div>
 
     <p style="fig">
-      <img src="plotPipe.svg">
+      <img src="plotPipe.svg" alt="Graph of Internet NZ Plot pipeline">
     </p>
 
-    <p><a href="https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/openapi.html#36.0">Yet another openapi example</a></p>
+    <h3><a href="https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/openapi.html#36.0">Yet another openapi example</a></h3>
 
-<div class="chunk" id="unnamed-chunk-10"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl std">piePipe</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">loadPipeline</span><span class="hl std">(</span><span class="hl str">&quot;scripts/internetparty/piePipe.xml&quot;</span><span class="hl std">)</span>
+<div class="chunk" id="unnamed-chunk-9"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl std">piePipe</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">loadPipeline</span><span class="hl std">(</span><span class="hl str">&quot;scripts/internetparty/piePipe.xml&quot;</span><span class="hl std">)</span>
 <span class="hl kwd">runPipeline</span><span class="hl std">(piePipe)</span>
 <span class="hl kwd">list.files</span><span class="hl std">(</span><span class="hl str">&quot;pipelines/piePipe&quot;</span><span class="hl std">,</span> <span class="hl kwc">recursive</span><span class="hl std">=</span><span class="hl num">TRUE</span><span class="hl std">)</span>
 </pre></div>
@@ -290,16 +314,16 @@
 </div></div>
 
     <p style="fig">
-      <img src="piePipe.svg">
+      <img src="piePipe.svg" alt="Graph of pie graph pipeline">
     </p>
 
     <p class="fig">
-      <object width="350px" height="350px"
+      <object width="350" height="350"
               data="pipelines/piePipe/modules/pie/pie.svg" 
               type="image/svg+xml"> </object>
     </p>
 
-<div class="chunk" id="unnamed-chunk-11"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl std">reportPipe</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">loadPipeline</span><span class="hl std">(</span><span class="hl str">&quot;scripts/internetparty/reportPipe.xml&quot;</span><span class="hl std">,</span> <span class="hl str">&quot;reportPipe&quot;</span><span class="hl std">)</span>
+<div class="chunk" id="unnamed-chunk-10"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl std">reportPipe</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">loadPipeline</span><span class="hl std">(</span><span class="hl str">&quot;scripts/internetparty/reportPipe.xml&quot;</span><span class="hl std">,</span> <span class="hl str">&quot;reportPipe&quot;</span><span class="hl std">)</span>
 <span class="hl kwd">runPipeline</span><span class="hl std">(reportPipe)</span>
 <span class="hl kwd">list.files</span><span class="hl std">(</span><span class="hl str">&quot;pipelines/reportPipe&quot;</span><span class="hl std">,</span> <span class="hl kwc">recursive</span><span class="hl std">=</span><span class="hl num">TRUE</span><span class="hl std">)</span>
 </pre></div>
@@ -317,10 +341,10 @@
 </pre></div>
 </div></div>
 
-    <iframe width="500px" height="700px" seamless
+    <iframe width="500" height="700" 
             src="pipelines/reportPipe/modules/report/report.html"></iframe>
 
-<div class="chunk" id="unnamed-chunk-12"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl kwd">library</span><span class="hl std">(gridSVG)</span>
+<div class="chunk" id="unnamed-chunk-11"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl kwd">library</span><span class="hl std">(gridSVG)</span>
 <span class="hl kwd">gridsvg</span><span class="hl std">(</span><span class="hl str">&quot;reportPipe.svg&quot;</span><span class="hl std">,</span> <span class="hl kwc">width</span><span class="hl std">=</span><span class="hl num">4</span><span class="hl std">,</span> <span class="hl kwc">height</span><span class="hl std">=</span><span class="hl num">4</span><span class="hl std">)</span>
 <span class="hl kwd">grid.graph</span><span class="hl std">(</span><span class="hl kwd">agopenTrue</span><span class="hl std">(conduit:::</span><span class="hl kwd">graphPipeline</span><span class="hl std">(reportPipe),</span>
                       <span class="hl str">&quot;reportPipe&quot;</span><span class="hl std">,</span>
@@ -332,11 +356,44 @@
 </pre></div>
 </div></div>
 
-  <p style="fig">
-    <img src="reportPipe.svg">
-  </p>
+    <p style="fig">
+      <img src="reportPipe.svg" alt="Graph of report pipeline">
+    </p>
 
+    <hr>
 
+    <div id="sessionInfo">
+<div class="chunk" id="unnamed-chunk-12"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl kwd">sessionInfo</span><span class="hl std">()</span>
+</pre></div>
+<div class="output"><pre class="knitr r">## R version 3.1.1 (2014-07-10)
+## Platform: x86_64-pc-linux-gnu (64-bit)
+## 
+## locale:
+##  [1] LC_CTYPE=en_NZ.UTF-8       LC_NUMERIC=C              
+##  [3] LC_TIME=en_NZ.UTF-8        LC_COLLATE=en_NZ.UTF-8    
+##  [5] LC_MONETARY=en_NZ.UTF-8    LC_MESSAGES=en_NZ.UTF-8   
+##  [7] LC_PAPER=en_NZ.UTF-8       LC_NAME=C                 
+##  [9] LC_ADDRESS=C               LC_TELEPHONE=C            
+## [11] LC_MEASUREMENT=en_NZ.UTF-8 LC_IDENTIFICATION=C       
+## 
+## attached base packages:
+## [1] grid      stats     graphics  grDevices utils     datasets  methods  
+## [8] base     
+## 
+## other attached packages:
+## [1] RCurl_1.95-4.1   bitops_1.0-6     gridSVG_1.4-0    gridGraphviz_0.3
+## [5] Rgraphviz_2.8.1  graph_1.42.0     conduit_0.1-0    knitr_1.6       
+## 
+## loaded via a namespace (and not attached):
+##  [1] BiocGenerics_0.10.0 evaluate_0.5.5      formatR_0.10       
+##  [4] highr_0.3           parallel_3.1.1      RBGL_1.40.0        
+##  [7] RJSONIO_1.3-0       stats4_3.1.1        stringr_0.6.2      
+## [10] tools_3.1.1         XML_3.98-1.1
+</pre></div>
+</div></div>
+    </div>
+
+    </div>
 
   </body>
 </html>
