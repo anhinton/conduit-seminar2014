@@ -1,5 +1,9 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 
+<!-- begin.rcode, echo=FALSE
+knitr::opts_chunk$set(cache=TRUE)
+end.rcode-->
+
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
@@ -49,7 +53,7 @@ escHTML <- function(x) {
          gsub(">", "&gt;", 
               gsub("&", "&amp;", x)))
 }
-cat(escHTML(getURL("https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/XML/birthrate-pipe.xml")))
+cat(escHTML(RCurl::getURL("https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/XML/birthrate-pipe.xml")))
 end.rcode-->
 
     <p><a href="scripts/wikinz/birthrate-pipe.xml">Modified pipeline XML
@@ -250,7 +254,7 @@ end.rcode-->
 
     This page was produced using the '<a href="http://yihui.name/knitr/">
       knitr</a>' package in R. The page source can be found at
-    <a href="conduit-seminar2014.Rhtml">conduit-seminar.Rhtml</a>.
+    <a href="index.Rhtml">index.Rhtml</a>.
 
     </div>
 

@@ -1,5 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 
+
+
 <html lang="en">
   <head>
 <style type="text/css">
@@ -90,7 +92,7 @@
 
     <p>By Paul Murrell and Ashley Noel Hinton</p>
 
-    <p>25 September 2014</p>
+    <p>10 February 2015</p>
 
     <p>Paul Murrell's talk, <a href="https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/">The openapi Project</a>, introduced the goals and ideas of 
       openapi, and demonstrated some pipeline examples in a 
@@ -105,7 +107,7 @@
 
     <p><a href="https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/XML/birthrate-pipe.xml">Original pipeline XML file</a>:</p>
 
-<div class="chunk" id="unnamed-chunk-1"><div class="rcode"><div class="output"><pre class="knitr r">## &lt;pipeline xmlns="http://www.openapi.org/2014/" version="0.1"&gt;
+<div class="chunk" id="unnamed-chunk-2"><div class="rcode"><div class="output"><pre class="knitr r">## &lt;pipeline xmlns="http://www.openapi.org/2014/" version="0.1"&gt;
 ##   &lt;component name="brsource"/&gt;
 ##   &lt;component name="birthrate"/&gt;
 ##   &lt;component name="brplot-R"/&gt;
@@ -124,7 +126,7 @@
     <p><a href="scripts/wikinz/birthrate-pipe.xml">Modified pipeline XML
 	file</a>:</p>
 
-<div class="chunk" id="unnamed-chunk-2"><div class="rcode"><div class="output"><pre class="knitr r">## &lt;pipeline xmlns="http://www.openapi.org/2014/"&gt;
+<div class="chunk" id="unnamed-chunk-3"><div class="rcode"><div class="output"><pre class="knitr r">## &lt;pipeline xmlns="http://www.openapi.org/2014/"&gt;
 ##   &lt;component name="brsource" ref="brsource.xml" type="module"/&gt;
 ##   &lt;component name="birthrate" ref="birthrate.xml" type="module"/&gt;
 ##   &lt;component name="brplot-R" ref="brplot-R.xml" type="module"/&gt;
@@ -180,7 +182,7 @@
       <a href="https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/openapi.html#14.0">openapi is a Glue System</a>
     </h3>
 
-<div class="chunk" id="unnamed-chunk-4"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl std">birthrate</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">loadPipeline</span><span class="hl std">(</span><span class="hl str">&quot;scripts/wikinz/birthrate-pipe.xml&quot;</span><span class="hl std">,</span>
+<div class="chunk" id="unnamed-chunk-5"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl std">birthrate</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">loadPipeline</span><span class="hl std">(</span><span class="hl str">&quot;scripts/wikinz/birthrate-pipe.xml&quot;</span><span class="hl std">,</span>
                                   <span class="hl str">&quot;birthrate&quot;</span><span class="hl std">)</span>
 <span class="hl kwd">runPipeline</span><span class="hl std">(birthrate)</span>
 <span class="hl kwd">list.files</span><span class="hl std">(</span><span class="hl str">&quot;pipelines/birthrate/modules&quot;</span><span class="hl std">,</span> <span class="hl kwc">recursive</span><span class="hl std">=</span><span class="hl num">TRUE</span><span class="hl std">)</span>
@@ -192,10 +194,23 @@
 
     <h3><a href="https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/openapi.html#15.0">openapi is...</a></h3>
 
-<div class="chunk" id="unnamed-chunk-5"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl kwd">library</span><span class="hl std">(gridGraphviz)</span>
-<span class="hl kwd">library</span><span class="hl std">(gridSVG)</span>
-<span class="hl kwd">gridsvg</span><span class="hl std">(</span><span class="hl str">&quot;birthrate-pipe.svg&quot;</span><span class="hl std">,</span> <span class="hl kwc">width</span><span class="hl std">=</span><span class="hl num">4</span><span class="hl std">,</span> <span class="hl kwc">height</span><span class="hl std">=</span><span class="hl num">3</span><span class="hl std">)</span>
-<span class="hl kwd">grid.graph</span><span class="hl std">(</span><span class="hl kwd">agopenTrue</span><span class="hl std">(conduit:::</span><span class="hl kwd">graphPipeline</span><span class="hl std">(birthrate),</span> <span class="hl str">&quot;birthrate&quot;</span><span class="hl std">,</span>
+<div class="chunk" id="unnamed-chunk-6"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl kwd">library</span><span class="hl std">(gridGraphviz)</span>
+</pre></div>
+<div class="message"><pre class="knitr r">## Loading required package: grid
+## Loading required package: graph
+## Loading required package: Rgraphviz
+</pre></div>
+<div class="source"><pre class="knitr r"><span class="hl kwd">library</span><span class="hl std">(gridSVG)</span>
+</pre></div>
+<div class="message"><pre class="knitr r">## 
+## Attaching package: 'gridSVG'
+## 
+## The following object is masked from 'package:grDevices':
+## 
+##     dev.off
+</pre></div>
+<div class="source"><pre class="knitr r"><span class="hl kwd">gridsvg</span><span class="hl std">(</span><span class="hl str">&quot;birthrate-pipe.svg&quot;</span><span class="hl std">,</span> <span class="hl kwc">width</span><span class="hl std">=</span><span class="hl num">4</span><span class="hl std">,</span> <span class="hl kwc">height</span><span class="hl std">=</span><span class="hl num">3</span><span class="hl std">)</span>
+<span class="hl kwd">grid.graph</span><span class="hl std">(</span><span class="hl kwd">agopenTrue</span><span class="hl std">(conduit</span><span class="hl opt">:::</span><span class="hl kwd">graphPipeline</span><span class="hl std">(birthrate),</span> <span class="hl str">&quot;birthrate&quot;</span><span class="hl std">,</span>
                       <span class="hl kwc">attrs</span><span class="hl std">=</span><span class="hl kwd">list</span><span class="hl std">(</span><span class="hl kwc">node</span><span class="hl std">=</span><span class="hl kwd">list</span><span class="hl std">(</span><span class="hl kwc">shape</span><span class="hl std">=</span><span class="hl str">&quot;ellipse&quot;</span><span class="hl std">))))</span>
 <span class="hl kwd">dev.off</span><span class="hl std">()</span>
 </pre></div>
@@ -207,7 +222,7 @@
 
     <h3><a href="https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/openapi.html#16.0">An openapi example</a></h3>
 
-<div class="chunk" id="unnamed-chunk-6"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl std">birthrate_custom</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">loadPipeline</span><span class="hl std">(</span><span class="hl str">&quot;scripts/wikinz/birthrate-pipe-custom.xml&quot;</span><span class="hl std">,</span>
+<div class="chunk" id="unnamed-chunk-7"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl std">birthrate_custom</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">loadPipeline</span><span class="hl std">(</span><span class="hl str">&quot;scripts/wikinz/birthrate-pipe-custom.xml&quot;</span><span class="hl std">,</span>
                                  <span class="hl str">&quot;birthrate_custom&quot;</span><span class="hl std">)</span>
 <span class="hl kwd">runPipeline</span><span class="hl std">(birthrate_custom)</span>
 <span class="hl kwd">list.files</span><span class="hl std">(</span><span class="hl str">&quot;pipelines/birthrate_custom&quot;</span><span class="hl std">,</span> <span class="hl kwc">recursive</span><span class="hl std">=</span><span class="hl num">TRUE</span><span class="hl std">)</span>
@@ -220,7 +235,7 @@
 ## [6] "modules/brplot-R/script.R"
 </pre></div>
 <div class="source"><pre class="knitr r"><span class="hl kwd">gridsvg</span><span class="hl std">(</span><span class="hl str">&quot;birthrate-custom-pipe.svg&quot;</span><span class="hl std">,</span> <span class="hl kwc">width</span><span class="hl std">=</span><span class="hl num">4</span><span class="hl std">,</span> <span class="hl kwc">height</span><span class="hl std">=</span><span class="hl num">3</span><span class="hl std">)</span>
-<span class="hl kwd">grid.graph</span><span class="hl std">(</span><span class="hl kwd">agopenTrue</span><span class="hl std">(conduit:::</span><span class="hl kwd">graphPipeline</span><span class="hl std">(birthrate_custom),</span>
+<span class="hl kwd">grid.graph</span><span class="hl std">(</span><span class="hl kwd">agopenTrue</span><span class="hl std">(conduit</span><span class="hl opt">:::</span><span class="hl kwd">graphPipeline</span><span class="hl std">(birthrate_custom),</span>
                       <span class="hl str">&quot;birthrate_custom&quot;</span><span class="hl std">,</span>
                       <span class="hl kwc">attrs</span><span class="hl std">=</span><span class="hl kwd">list</span><span class="hl std">(</span><span class="hl kwc">node</span><span class="hl std">=</span><span class="hl kwd">list</span><span class="hl std">(</span><span class="hl kwc">shape</span><span class="hl std">=</span><span class="hl str">&quot;ellipse&quot;</span><span class="hl std">))))</span>
 <span class="hl kwd">grid.edit</span><span class="hl std">(</span><span class="hl str">&quot;box-brplot-R-custom&quot;</span><span class="hl std">,</span> <span class="hl kwc">gp</span><span class="hl std">=</span><span class="hl kwd">gpar</span><span class="hl std">(</span><span class="hl kwc">fill</span><span class="hl std">=</span><span class="hl str">&quot;green&quot;</span><span class="hl std">))</span>
@@ -240,7 +255,7 @@
 
     <h3><a href="https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/openapi.html#20.0">Another openapi example</a></h3>
 
-<div class="chunk" id="unnamed-chunk-7"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl std">birthrate_python</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">loadPipeline</span><span class="hl std">(</span><span class="hl str">&quot;scripts/wikinz/birthrate-pipe-python.xml&quot;</span><span class="hl std">,</span>
+<div class="chunk" id="unnamed-chunk-8"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl std">birthrate_python</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">loadPipeline</span><span class="hl std">(</span><span class="hl str">&quot;scripts/wikinz/birthrate-pipe-python.xml&quot;</span><span class="hl std">,</span>
                                  <span class="hl str">&quot;birthrate_python&quot;</span><span class="hl std">)</span>
 <span class="hl kwd">runPipeline</span><span class="hl std">(birthrate_python)</span>
 <span class="hl kwd">list.files</span><span class="hl std">(</span><span class="hl str">&quot;pipelines/birthrate_python&quot;</span><span class="hl std">,</span> <span class="hl kwc">recursive</span><span class="hl std">=</span><span class="hl num">TRUE</span><span class="hl std">)</span>
@@ -254,7 +269,7 @@
 </pre></div>
 <div class="source"><pre class="knitr r"><span class="hl kwd">library</span><span class="hl std">(gridSVG)</span>
 <span class="hl kwd">gridsvg</span><span class="hl std">(</span><span class="hl str">&quot;birthrate-pipe-python.svg&quot;</span><span class="hl std">,</span> <span class="hl kwc">width</span><span class="hl std">=</span><span class="hl num">4</span><span class="hl std">,</span> <span class="hl kwc">height</span><span class="hl std">=</span><span class="hl num">3</span><span class="hl std">)</span>
-<span class="hl kwd">grid.graph</span><span class="hl std">(</span><span class="hl kwd">agopenTrue</span><span class="hl std">(conduit:::</span><span class="hl kwd">graphPipeline</span><span class="hl std">(birthrate_python),</span>
+<span class="hl kwd">grid.graph</span><span class="hl std">(</span><span class="hl kwd">agopenTrue</span><span class="hl std">(conduit</span><span class="hl opt">:::</span><span class="hl kwd">graphPipeline</span><span class="hl std">(birthrate_python),</span>
                       <span class="hl str">&quot;birthrate_python&quot;</span><span class="hl std">,</span>
                       <span class="hl kwc">attrs</span><span class="hl std">=</span><span class="hl kwd">list</span><span class="hl std">(</span><span class="hl kwc">node</span><span class="hl std">=</span><span class="hl kwd">list</span><span class="hl std">(</span><span class="hl kwc">shape</span><span class="hl std">=</span><span class="hl str">&quot;ellipse&quot;</span><span class="hl std">))))</span>
 <span class="hl kwd">grid.edit</span><span class="hl std">(</span><span class="hl str">&quot;box-brplot-py&quot;</span><span class="hl std">,</span> <span class="hl kwc">gp</span><span class="hl std">=</span><span class="hl kwd">gpar</span><span class="hl std">(</span><span class="hl kwc">fill</span><span class="hl std">=</span><span class="hl str">&quot;green&quot;</span><span class="hl std">))</span>
@@ -274,16 +289,16 @@
 
     <p><a href="https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/openapi.html#33.0">Yet another openapi example</a></p>
 
-<div class="chunk" id="unnamed-chunk-8"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl std">plotPipe</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">loadPipeline</span><span class="hl std">(</span><span class="hl str">&quot;scripts/internetparty/plotPipe.xml&quot;</span><span class="hl std">,</span> <span class="hl str">&quot;plotPipe&quot;</span><span class="hl std">)</span>
+<div class="chunk" id="unnamed-chunk-9"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl std">plotPipe</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">loadPipeline</span><span class="hl std">(</span><span class="hl str">&quot;scripts/internetparty/plotPipe.xml&quot;</span><span class="hl std">,</span> <span class="hl str">&quot;plotPipe&quot;</span><span class="hl std">)</span>
 <span class="hl kwd">library</span><span class="hl std">(gridSVG)</span>
 <span class="hl kwd">gridsvg</span><span class="hl std">(</span><span class="hl str">&quot;plotPipe.svg&quot;</span><span class="hl std">,</span> <span class="hl kwc">width</span><span class="hl std">=</span><span class="hl num">4</span><span class="hl std">,</span> <span class="hl kwc">height</span><span class="hl std">=</span><span class="hl num">4</span><span class="hl std">)</span>
-<span class="hl kwd">grid.graph</span><span class="hl std">(</span><span class="hl kwd">agopenTrue</span><span class="hl std">(conduit:::</span><span class="hl kwd">graphPipeline</span><span class="hl std">(plotPipe),</span>
+<span class="hl kwd">grid.graph</span><span class="hl std">(</span><span class="hl kwd">agopenTrue</span><span class="hl std">(conduit</span><span class="hl opt">:::</span><span class="hl kwd">graphPipeline</span><span class="hl std">(plotPipe),</span>
                       <span class="hl str">&quot;plotPipe&quot;</span><span class="hl std">,</span>
                       <span class="hl kwc">attrs</span><span class="hl std">=</span><span class="hl kwd">list</span><span class="hl std">(</span><span class="hl kwc">node</span><span class="hl std">=</span><span class="hl kwd">list</span><span class="hl std">(</span><span class="hl kwc">shape</span><span class="hl std">=</span><span class="hl str">&quot;ellipse&quot;</span><span class="hl std">))))</span>
 <span class="hl kwd">dev.off</span><span class="hl std">()</span>
 </pre></div>
-<div class="warning"><pre class="knitr r">## Warning: one of more grobs overwritten (grab WILL not be faithful; try
-## 'wrap = TRUE')
+<div class="warning"><pre class="knitr r">## Warning in grabDL(warn, wrap, ...): one of more grobs overwritten (grab
+## WILL not be faithful; try 'wrap = TRUE')
 </pre></div>
 </div></div>
 
@@ -293,7 +308,7 @@
 
     <h3><a href="https://www.stat.auckland.ac.nz/~paul/Talks/OpenAPI2014/openapi.html#36.0">Yet another openapi example</a></h3>
 
-<div class="chunk" id="unnamed-chunk-9"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl std">piePipe</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">loadPipeline</span><span class="hl std">(</span><span class="hl str">&quot;scripts/internetparty/piePipe.xml&quot;</span><span class="hl std">)</span>
+<div class="chunk" id="unnamed-chunk-10"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl std">piePipe</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">loadPipeline</span><span class="hl std">(</span><span class="hl str">&quot;scripts/internetparty/piePipe.xml&quot;</span><span class="hl std">)</span>
 <span class="hl kwd">runPipeline</span><span class="hl std">(piePipe)</span>
 <span class="hl kwd">list.files</span><span class="hl std">(</span><span class="hl str">&quot;pipelines/piePipe&quot;</span><span class="hl std">,</span> <span class="hl kwc">recursive</span><span class="hl std">=</span><span class="hl num">TRUE</span><span class="hl std">)</span>
 </pre></div>
@@ -305,14 +320,14 @@
 </pre></div>
 <div class="source"><pre class="knitr r"><span class="hl kwd">library</span><span class="hl std">(gridSVG)</span>
 <span class="hl kwd">gridsvg</span><span class="hl std">(</span><span class="hl str">&quot;piePipe.svg&quot;</span><span class="hl std">,</span> <span class="hl kwc">width</span><span class="hl std">=</span><span class="hl num">4</span><span class="hl std">,</span> <span class="hl kwc">height</span><span class="hl std">=</span><span class="hl num">4</span><span class="hl std">)</span>
-<span class="hl kwd">grid.graph</span><span class="hl std">(</span><span class="hl kwd">agopenTrue</span><span class="hl std">(conduit:::</span><span class="hl kwd">graphPipeline</span><span class="hl std">(piePipe),</span>
+<span class="hl kwd">grid.graph</span><span class="hl std">(</span><span class="hl kwd">agopenTrue</span><span class="hl std">(conduit</span><span class="hl opt">:::</span><span class="hl kwd">graphPipeline</span><span class="hl std">(piePipe),</span>
                       <span class="hl str">&quot;piePipe&quot;</span><span class="hl std">,</span>
                       <span class="hl kwc">attrs</span><span class="hl std">=</span><span class="hl kwd">list</span><span class="hl std">(</span><span class="hl kwc">node</span><span class="hl std">=</span><span class="hl kwd">list</span><span class="hl std">(</span><span class="hl kwc">shape</span><span class="hl std">=</span><span class="hl str">&quot;ellipse&quot;</span><span class="hl std">))))</span>
 <span class="hl kwd">grid.edit</span><span class="hl std">(</span><span class="hl str">&quot;box-pie&quot;</span><span class="hl std">,</span> <span class="hl kwc">gp</span><span class="hl std">=</span><span class="hl kwd">gpar</span><span class="hl std">(</span><span class="hl kwc">fill</span><span class="hl std">=</span><span class="hl str">&quot;green&quot;</span><span class="hl std">))</span>
 <span class="hl kwd">dev.off</span><span class="hl std">()</span>
 </pre></div>
-<div class="warning"><pre class="knitr r">## Warning: one of more grobs overwritten (grab WILL not be faithful; try
-## 'wrap = TRUE')
+<div class="warning"><pre class="knitr r">## Warning in grabDL(warn, wrap, ...): one of more grobs overwritten (grab
+## WILL not be faithful; try 'wrap = TRUE')
 </pre></div>
 </div></div>
 
@@ -326,7 +341,7 @@
               type="image/svg+xml"> </object>
     </p>
 
-<div class="chunk" id="unnamed-chunk-10"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl std">reportPipe</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">loadPipeline</span><span class="hl std">(</span><span class="hl str">&quot;scripts/internetparty/reportPipe.xml&quot;</span><span class="hl std">,</span> <span class="hl str">&quot;reportPipe&quot;</span><span class="hl std">)</span>
+<div class="chunk" id="unnamed-chunk-11"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl std">reportPipe</span> <span class="hl kwb">&lt;-</span> <span class="hl kwd">loadPipeline</span><span class="hl std">(</span><span class="hl str">&quot;scripts/internetparty/reportPipe.xml&quot;</span><span class="hl std">,</span> <span class="hl str">&quot;reportPipe&quot;</span><span class="hl std">)</span>
 <span class="hl kwd">runPipeline</span><span class="hl std">(reportPipe)</span>
 <span class="hl kwd">list.files</span><span class="hl std">(</span><span class="hl str">&quot;pipelines/reportPipe&quot;</span><span class="hl std">,</span> <span class="hl kwc">recursive</span><span class="hl std">=</span><span class="hl num">TRUE</span><span class="hl std">)</span>
 </pre></div>
@@ -347,15 +362,15 @@
     <iframe width="500" height="700" 
             src="pipelines/reportPipe/modules/report/report.html"></iframe>
 
-<div class="chunk" id="unnamed-chunk-11"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl kwd">library</span><span class="hl std">(gridSVG)</span>
+<div class="chunk" id="unnamed-chunk-12"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl kwd">library</span><span class="hl std">(gridSVG)</span>
 <span class="hl kwd">gridsvg</span><span class="hl std">(</span><span class="hl str">&quot;reportPipe.svg&quot;</span><span class="hl std">,</span> <span class="hl kwc">width</span><span class="hl std">=</span><span class="hl num">4</span><span class="hl std">,</span> <span class="hl kwc">height</span><span class="hl std">=</span><span class="hl num">4</span><span class="hl std">)</span>
-<span class="hl kwd">grid.graph</span><span class="hl std">(</span><span class="hl kwd">agopenTrue</span><span class="hl std">(conduit:::</span><span class="hl kwd">graphPipeline</span><span class="hl std">(reportPipe),</span>
+<span class="hl kwd">grid.graph</span><span class="hl std">(</span><span class="hl kwd">agopenTrue</span><span class="hl std">(conduit</span><span class="hl opt">:::</span><span class="hl kwd">graphPipeline</span><span class="hl std">(reportPipe),</span>
                       <span class="hl str">&quot;reportPipe&quot;</span><span class="hl std">,</span>
                       <span class="hl kwc">attrs</span><span class="hl std">=</span><span class="hl kwd">list</span><span class="hl std">(</span><span class="hl kwc">node</span><span class="hl std">=</span><span class="hl kwd">list</span><span class="hl std">(</span><span class="hl kwc">shape</span><span class="hl std">=</span><span class="hl str">&quot;ellipse&quot;</span><span class="hl std">))))</span>
 <span class="hl kwd">dev.off</span><span class="hl std">()</span>
 </pre></div>
-<div class="warning"><pre class="knitr r">## Warning: one of more grobs overwritten (grab WILL not be faithful; try
-## 'wrap = TRUE')
+<div class="warning"><pre class="knitr r">## Warning in grabDL(warn, wrap, ...): one of more grobs overwritten (grab
+## WILL not be faithful; try 'wrap = TRUE')
 </pre></div>
 </div></div>
 
@@ -366,9 +381,9 @@
     <hr>
 
     <div id="sessionInfo">
-<div class="chunk" id="unnamed-chunk-12"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl kwd">sessionInfo</span><span class="hl std">()</span>
+<div class="chunk" id="unnamed-chunk-13"><div class="rcode"><div class="source"><pre class="knitr r"><span class="hl kwd">sessionInfo</span><span class="hl std">()</span>
 </pre></div>
-<div class="output"><pre class="knitr r">## R version 3.1.1 (2014-07-10)
+<div class="output"><pre class="knitr r">## R version 3.1.2 (2014-10-31)
 ## Platform: x86_64-pc-linux-gnu (64-bit)
 ## 
 ## locale:
@@ -384,14 +399,15 @@
 ## [8] base     
 ## 
 ## other attached packages:
-## [1] RCurl_1.95-4.1   bitops_1.0-6     gridSVG_1.4-0    gridGraphviz_0.3
-## [5] Rgraphviz_2.8.1  graph_1.42.0     conduit_0.1-0    knitr_1.6       
+## [1] gridSVG_1.4-2    gridGraphviz_0.3 Rgraphviz_2.10.0 graph_1.44.1    
+## [5] conduit_0.1-0    knitr_1.8       
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] BiocGenerics_0.10.0 evaluate_0.5.5      formatR_0.10       
-##  [4] highr_0.3           parallel_3.1.1      RBGL_1.40.0        
-##  [7] RJSONIO_1.3-0       stats4_3.1.1        stringr_0.6.2      
-## [10] tools_3.1.1         XML_3.98-1.1
+##  [1] BiocGenerics_0.12.1 bitops_1.0-6        codetools_0.2-10   
+##  [4] digest_0.6.8        evaluate_0.5.5      formatR_1.0        
+##  [7] highr_0.4           parallel_3.1.2      RBGL_1.42.0        
+## [10] RCurl_1.95-4.5      RJSONIO_1.3-0       stats4_3.1.2       
+## [13] stringr_0.6.2       tools_3.1.2         XML_3.98-1.1
 </pre></div>
 </div></div>
     </div>
@@ -400,7 +416,7 @@
 
     This page was produced using the '<a href="http://yihui.name/knitr/">
       knitr</a>' package in R. The page source can be found at
-    <a href="conduit-seminar2014.Rhtml">conduit-seminar.Rhtml</a>.
+    <a href="index.Rhtml">index.Rhtml</a>.
 
     </div>
 
